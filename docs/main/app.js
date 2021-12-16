@@ -15,6 +15,7 @@ const signUp = e =>{
         localStorage.setItem('formData', JSON.stringify(formData));
         document.querySelector('form').reset();
         document.querySelector('fname').focus();
+        window.location.href='/docs/login.html'
         alert("Account created\nPlease use the Sign In link");
     }else{
         alert("Error\nSuch account already exists");
@@ -23,23 +24,23 @@ const signUp = e =>{
     e.preventDefault();
 }
 
-// function displayData(){
-//     if (localStorage.getItem('formData')){
-//         var output = document.querySelector("tbody");
-//         output.innerHTML = "";
-//         JSON.parse(localStorage.getItem('formData')).forEach(data=>{
-//             output.innerHTML += `
-//                         <tr>
-//                             <td>${data.fname}</td>
-//                             <td>${data.lname}</td>
-//                             <td>${data.email}</td>
-//                             <td>${data.pwd}</td>
-//                         </tr>
-//             `;
-//         });
-//     }
-// }
-// displayData()
+function displayData(){
+    if (localStorage.getItem('formData')){
+        var output = document.querySelector("tbody");
+        output.innerHTML = "";
+        JSON.parse(localStorage.getItem('formData')).forEach(data=>{
+            output.innerHTML += `
+                        <tr>
+                            <td>${data.fname}</td>
+                            <td>${data.lname}</td>
+                            <td>${data.email}</td>
+                            <td>${data.pwd}</td>
+                        </tr>
+            `;
+        });
+    }
+}
+
 
 const signIn = e =>{
     let email = document.getElementById('email').value, pwd = document.getElementById('pwd').value;
@@ -50,6 +51,8 @@ const signIn = e =>{
     }
     else{
         alert("Welcome " + email);
+        window.location.href='/docs/index.html'
     }
     e.preventDefault();
 };
+
