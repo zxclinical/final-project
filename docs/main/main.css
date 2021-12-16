@@ -9,14 +9,11 @@
 body{
     background-color: #E1DCC5;
 }
-h1{
-    font-family: 'Syne', sans-serif;
+h1, h2, h3{
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
-h2,h3{
-    font-family: 'Syne', sans-serif;
-    font-weight: 600;
-}
+
 nav{
     background-color: #333333;
     height: 4rem;
@@ -60,6 +57,53 @@ nav ul li a{
 }
 #check{
     display: none;
+}
+.form-control{
+    width: 100%;
+    text-align: center;
+}
+.form-control h2{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.form-control__element{
+    width: 30vw;
+    padding: 1rem;
+    margin: 1rem auto;
+    border: none;
+    border-radius: .5rem;
+}
+.form-control__element:focus{
+    outline: none;
+}
+.form-control__submit-button{
+    margin-bottom: 1rem;
+    width: 15vw;
+    padding: .5rem;
+    background: #333333;
+    border: 1px solid #333333;
+    border-radius: .5rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+.form-image{
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+}
+.form-image img{
+    width: 15rem;
+    margin: auto;
+}
+.table{
+    text-align: center;
+    margin: 1rem auto;
+}
+.table th, td{
+    border-right: 1px solid#333333;
+    border-bottom: 1px solid#333333;
+    padding: 1rem;
+    font-weight: 700;
 }
 
 @media (max-width:960px){

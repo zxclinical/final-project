@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="main/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d99af6f76f.js" crossorigin="anonymous"></script>
 </head>
 
@@ -40,7 +40,56 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <div class="container">
+            <div>
+                <div class="form-image">
+                    <img src="images/profile.png" alt="">
+                </div>
+                <form onsubmit="signUp(event);" autocomplete="off" id="registration-form" class="form-control">
+                    <h2>
+                        Sign Up<br>
+                        Already have an account? <br>
+                        <a href="login.html">Sign In!</a>
 
+                    </h2>
+                    <div>
+                        <input required id="fname" class="form-control__element" type="text" placeholder="Enter your first name">
+                    </div>
+                    <div>
+                        <input required id="lname" class="form-control__element" type="text"
+                            placeholder="Enter your second name">
+                    </div>
+                    <div>
+                        <input required id="email" class="form-control__element" type="email" placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <input required id="password" class="form-control__element" type="password"
+                            placeholder="Enter your password">
+                    </div>
+                    <div>
+                        <input class="form-control__submit-button" type="submit" value="Sign Up">
+                    </div>
+                </form>
+            </div>
+            <div>
+                <table class="table" id="output-table">
+                    <thead>
+                        <tr>
+                            <th>First Namne</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
     <script src="main/app.js"></script>
 </body>
 
