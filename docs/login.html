@@ -40,7 +40,30 @@
             </ul>
         </nav>
     </header>
-
+    <main>
+        <div class="container">
+            <div>
+                <div class="form-image">
+                    <img src="images/profile.png" alt="signIn/signUp picture">
+                    <form onsubmit="signIn(event);" autocomplete="off" id="login-form" class="form-control">
+                        <div>
+                            <input required id="email" class="form-control__element" type="email" placeholder="Enter your email">
+                        </div>
+                        <div>
+                            <input required id="pwd" class="form-control__element" type="password" placeholder="Enter your password">
+                        </div>
+                        <div>
+                            <input class="form-control__submit-button" type="submit" value="Sign In">
+                        </div>
+                    </form>
+                    <p>
+                        Don't have an account?<br>
+                        <a href="registration.html">Create one!</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
     <script src="main/app.js"></script>
 </body>
 

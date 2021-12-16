@@ -1,36 +1,55 @@
-const signUp = e => {
-    let formData = JSON.parse(localStorage.getItem('formData')) || [];
-    let exists = formData.length && JSON.parse(localStorage.getItem('formData')).some(data => data.email.toLowerCase() == document.getElementById('email').value.toLowerCase())
-    if (!exists) {
-        formData.push({
-            fname: document.getElementById('fname').value,
-            lname: document.getElementById('lname').value,
-            email: document.getElementById('email').value,
-            password: document.getElementById('password').value
-        });
+const signUp = e =>{
+    let fname = document.getElementById("fname").value,
+        lname = document.getElementById("lname").value,
+        email = document.getElementById("email").value,
+        pwd = document.getElementById("pwd").value;
+    
+    let formData = JSON.parse(localStorage.getItem('formData')) ||  [];
+
+    let exists = formData.length &&
+    JSON.parse(localStorage.getItem('formData')).some(data => 
+        data.email.toLowerCase() == email.toLowerCase());
+
+    if(!exists){
+        formData.push({fname, lname, email, pwd});
         localStorage.setItem('formData', JSON.stringify(formData));
-        dispData();
         document.querySelector('form').reset();
-        document.getElementById('fname').focus();
+        document.querySelector('fname').focus();
+        alert("Account created\nPlease use the Sign In link");
     }else{
-        alert("Error\nsuch email is already in use")
+        alert("Error\nSuch account already exists");
     }
+    displayData();
     e.preventDefault();
 }
-function dispData() {
-    if (localStorage.getItem('formData')) {
-        var output = document.querySelector('tbody');
-        output.innerHTML = "";
-        JSON.parse(localStorage.getItem('formData')).forEach(data => {
-            output.innerHTML += `
-                    <tr>
-                        <td>${data.fname}</td>
-                        <td>${data.lname}</td>
-                        <td>${data.email}</td>
-                        <td>${data.password}</td>
-                    </tr>
-                    `;
-        });
+
+// function displayData(){
+//     if (localStorage.getItem('formData')){
+//         var output = document.querySelector("tbody");
+//         output.innerHTML = "";
+//         JSON.parse(localStorage.getItem('formData')).forEach(data=>{
+//             output.innerHTML += `
+//                         <tr>
+//                             <td>${data.fname}</td>
+//                             <td>${data.lname}</td>
+//                             <td>${data.email}</td>
+//                             <td>${data.pwd}</td>
+//                         </tr>
+//             `;
+//         });
+//     }
+// }
+// displayData()
+
+const signIn = e =>{
+    let email = document.getElementById('email').value, pwd = document.getElementById('pwd').value;
+    let formData = JSON.parse(localStorage.getItem('formData')) || [];
+    let exists = formData.length && JSON.parse(localStorage.getItem('formData')).some(data => data.email.toLowerCase() == email && data.pwd.toLowerCase() == pwd);
+    if (!exists){
+        alert('Email or Password are incorrect');
     }
-}
-dispData();
+    else{
+        alert("Welcome " + email);
+    }
+    e.preventDefault();
+};
