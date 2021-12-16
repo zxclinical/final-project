@@ -51,8 +51,7 @@ const signIn = e =>{
     }
     else{
         alert("Welcome " + email);
-        window.location.href='/docs/index.html'
+        window.location.href='../index.html'
     }
     e.preventDefault();
 };
-
