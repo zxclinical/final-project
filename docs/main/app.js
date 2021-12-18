@@ -65,7 +65,40 @@ $('.slider').slick({
     dots: false,
     arrows: false,
     draggable: true,
+
+    responsive: [
+        {
+          breakpoint: 960,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 4
+          }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    
 });
+
+
 
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
