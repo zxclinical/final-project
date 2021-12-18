@@ -1,3 +1,70 @@
+const form = document.getElementById("registration-form");
+const fname = document.getElementById("fname");
+const lname = document.getElementById("lname");
+const email = document.getElementById("email");
+const pwd = document.getElementById("pwd");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    checkInput();
+});
+
+function checkInput() {
+    const fnameValue = fname.value.trim();
+    const lnameValue = lname.value.trim();
+    const emailValue = email.value.trim();
+    const pwdValue = pwd.value.trim();
+
+    if (fnameValue === "") {
+        setErrorFor(fname, 'First name cannot be blank');
+    } else {
+        setSuccessFor(fname);
+    }
+
+    if (lnameValue === "") {
+        setErrorFor(lname, 'First name cannot be blank');
+    } else {
+        setSuccessFor(lname);
+    }
+
+    if (emailValue === "") {
+        setErrorFor(email, 'Email cannot be blank');
+    } else if (!checkEmail(emailValue)) {
+        setErrorFor(email, 'Email is not valid');
+    } else {
+        setSuccessFor(email);
+    }
+
+    if (pwdValue === "") {
+        setErrorFor(pwd, 'First name cannot be blank');
+    } else if (pwdValue.length > 15){
+        setErrorFor(pwd, 'Password length should be less than 15 characters');
+    } else if (pwdValue.length < 8){
+        setErrorFor(pwd, 'Password length should be at lest 8 charachter');
+    }
+     else {
+        setSuccessFor(pwd);
+    }
+
+}
+
+function setErrorFor(input, message) {
+    const formControl = input.parentElement;
+    const small = formControl.querySelector('small');
+    small.innerHTML = message;
+    formControl.className = "form-control error";
+}
+
+function setSuccessFor(input) {
+    const formControl = input.parentElement;
+    formControl.className = "form-control success";
+}
+
+function checkEmail(email) {
+    return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+}
+
 const signUp = e => {
     let fname = document.getElementById("fname").value,
         lname = document.getElementById("lname").value,
@@ -69,13 +136,13 @@ $('.slider').slick({
 
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
-  }
-  
-  window.onclick = function(e) {
+}
+
+window.onclick = function (e) {
     if (!e.target.matches('.dropbtn')) {
-    var myDropdown = document.getElementById("myDropdown");
-      if (myDropdown.classList.contains('show')) {
-        myDropdown.classList.remove('show');
-      }
+        var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+        }
     }
-  }
+}
