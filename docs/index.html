@@ -1,47 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Library - Home Page</title>
-    <link rel="stylesheet" href="main/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d99af6f76f.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="main/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d99af6f76f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <a href="#" class="logo">Library</a>
-            <ul>
-                <li>
-                    <a class="active" href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contacts</a>
-                </li>
-                <li>
-                    <a href="login.html">Login</a>
-                </li>
-                <li>
-                    <a href="registration.html">Registration</a>
-                </li>
-            </ul>
-        </nav>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul class="nav-left">
+          <li><a href="#" class="logo">Library</a></li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="myFunction()">
+                Genre
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="#">Popular</a>
+                <a href="#">Best seller</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a class="active" href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="contact.html">Contacts</a>
+          </li>
+          <li>
+            <a href="login.html">Login</a>
+          </li>
+          <li>
+            <a href="registration.html">Registration</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-
+    <div class="container">
+      <div class="content-section">
+        <div class="content-section-header">
+          <h3>Popular</h3>
+        </div>
+        <div class="content-section-books slider">
+          <div>
+            <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+            Insomnia
+          </div>
+          <div>
+            <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+            Insomnia
+          </div>
+          <div>
+            <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+            Insomnia
+          </div>
+          <div>
+            <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+            Insomnia
+          </div>
+          <div>
+            <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+            Insomnia
+          </div>
+          <div>
+            <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+            Insomnia
+          </div>
+          <div>
+            <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+            Insomnia
+          </div>
+        </div>
+      </div>
+      <div class="content-section">
+        <div class="content-section-header">
+          <h3>Best Seller</h3>
+        </div>
+        <div class="content-section-books slider">
+          <div>
+            <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+            Insomnia
+          </div>
+          <div>
+            <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+            Insomnia
+          </div>
+          <div>
+            <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+            Insomnia
+          </div>
+          <div>
+            <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+            Insomnia
+          </div>
+          <div>
+            <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+            Insomnia
+          </div>
+          <div>
+            <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+            Insomnia
+          </div>
+          <div>
+            <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+            Insomnia
+          </div>
+        </div>
+        <div class="content-section">
+            <div class="content-section-header">
+              <h3>Horror</h3>
+            </div>
+            <div class="content-section-books slider">
+              <div>
+                <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+                Insomnia
+              </div>
+              <div>
+                <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+                Insomnia
+              </div>
+              <div>
+                <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+                Insomnia
+              </div>
+              <div>
+                <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+                Insomnia
+              </div>
+              <div>
+                <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+                Insomnia
+              </div>
+              <div>
+                <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+                Insomnia
+              </div>
+              <div>
+                <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+                Insomnia
+              </div>
+            </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="main/app.js"></script>
-</body>
-
+  </body>
 </html>
