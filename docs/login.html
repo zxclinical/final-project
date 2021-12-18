@@ -45,7 +45,7 @@
             <div>
                 <div class="form-image">
                     <img src="images/profile.png" alt="signIn/signUp picture">
-                    <form onsubmit="signIn(event);" autocomplete="off" id="login-form" class="form-control">
+                    <form onsubmit="event.preventDefault();signIn();" autocomplete="off" id="login-form" class="form-control">
                         <div>
                             <input required id="email" class="form-control__element" type="email" placeholder="Enter your email">
                         </div>

@@ -114,9 +114,44 @@ nav ul li a{
     display: none;
 }
 .form-control{
-    width: 100%;
+    position: relative;
+    padding-bottom: 20px;
+}
+.form-control i{
+    visibility: hidden;
+    position: absolute;
+    top: 2rem;
+    right: 10rem;
+}
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 1rem;
+    left: 9.5rem;
+}
+.form-control.success input{
+    border: 2px solid #2ecc71;
+}
+.form-control.error input{
+    border: 2px solid #e74c3c;
+}
+.form-control.success i.fa-check-circle{
+    visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle{
+    visibility: visible;
+}
+.form-control.error small{
+    color: #e74c3c;
+    font-weight: 600;
+    visibility: visible;
+}
+.form{
+    width: 50vw;
+    margin: auto;
     text-align: center;
 }
+
 .form-control h2{
     font-size: 1.5rem;
     margin-top: 1rem;

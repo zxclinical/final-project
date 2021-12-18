@@ -46,26 +46,43 @@
                 <div class="form-image">
                     <img src="images/profile.png" alt="signIn/signUp picture">
                 </div>
-                <form onsubmit="signUp(event);" autocomplete="off" id="registration-form" class="form-control">
+                <form autocomplete="off" id="registration-form" class="form">
                     <h2>
                         Sign Up<br>
                         Already have an account? <br>
                         <a href="login.html">Sign In!</a>
-
                     </h2>
-                    <div>
-                        <input required id="fname" class="form-control__element" type="text" placeholder="Enter your first name">
+                    <div class="form-control">
+                        <input  id="fname" class="form-control__element" type="text"
+                            placeholder="Enter your first name">
+                            <br>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error Message</small>
                     </div>
-                    <div>
-                        <input required id="lname" class="form-control__element" type="text"
+                    <div class="form-control">
+                        <input  id="lname" class="form-control__element" type="text"
                             placeholder="Enter your second name">
+                            <br>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error Message</small>
                     </div>
-                    <div>
-                        <input required id="email" class="form-control__element" type="email" placeholder="Enter your email">
+                    <div class="form-control">
+                        <input  id="email" class="form-control__element" type="email"
+                            placeholder="Enter your email">
+                            <br>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error Message</small>
                     </div>
-                    <div>
-                        <input required id="pwd" class="form-control__element" type="password"
+                    <div class="form-control">
+                        <input  id="pwd" class="form-control__element" type="password"
                             placeholder="Enter your password">
+                            <br>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error Message</small>
                     </div>
                     <div>
                         <input class="form-control__submit-button" type="submit" value="Sign Up">
