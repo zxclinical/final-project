@@ -3,11 +3,32 @@ const fname = document.getElementById("fname");
 const lname = document.getElementById("lname");
 const email = document.getElementById("email");
 const pwd = document.getElementById("pwd");
+const guestElements = document.querySelectorAll('.guest');
+const userElements = document.querySelectorAll('.user');
 
-form.addEventListener("submit", (e) => {
+let isFormValid = true;
+
+document.addEventListener('DOMContentLoaded', e => {
+    const isLoggedIn = +(localStorage.getItem('loggedIn')) === 1;
+
+    if (isLoggedIn) {
+        guestElements.forEach(element => element.style.display = 'none');
+        userElements.forEach(element => element.style.display = 'block');
+    }
+});
+
+// Новое событие на logout
+// Удалить loggedIn из localStorage
+// Редирект
+
+form?.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    checkInput();
+    if (! checkInput()) {
+        return;
+    }
+
+    signUp();
 });
 
 function checkInput() {
@@ -41,15 +62,17 @@ function checkInput() {
     } else if (pwdValue.length > 15){
         setErrorFor(pwd, 'Password length should be less than 15 characters');
     } else if (pwdValue.length < 8){
-        setErrorFor(pwd, 'Password length should be at lest 8 charachter');
+        setErrorFor(pwd, 'Password length should be at least 8 charachter');
     }
      else {
         setSuccessFor(pwd);
     }
 
+    return isFormValid;
 }
 
 function setErrorFor(input, message) {
+    isFormValid = false;
     const formControl = input.parentElement;
     const small = formControl.querySelector('small');
     small.innerHTML = message;
@@ -65,7 +88,7 @@ function checkEmail(email) {
     return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
 
-const signUp = e => {
+const signUp = () => {
     let fname = document.getElementById("fname").value,
         lname = document.getElementById("lname").value,
         email = document.getElementById("email").value,
@@ -88,7 +111,6 @@ const signUp = e => {
         alert("Error\nSuch account already exists");
     }
     displayData();
-    e.preventDefault();
 }
 
 function displayData() {
@@ -102,6 +124,7 @@ function displayData() {
                             <td>${data.lname}</td>
                             <td>${data.email}</td>
                             <td>${data.pwd}</td>
+                            <td><button onclick="deleteUser('${data.email}')">Delete</button></td>
                         </tr>
             `;
         });
@@ -109,7 +132,7 @@ function displayData() {
 }
 
 
-const signIn = e => {
+const signIn = () => {
     let email = document.getElementById('email').value, pwd = document.getElementById('pwd').value;
     let formData = JSON.parse(localStorage.getItem('formData')) || [];
     let exists = formData.length && JSON.parse(localStorage.getItem('formData')).some(data => data.email.toLowerCase() == email && data.pwd.toLowerCase() == pwd);
@@ -118,9 +141,9 @@ const signIn = e => {
     }
     else {
         alert("Welcome " + email);
-        window.location.href = '../index.html'
+        localStorage.setItem('loggedIn', 1);
+        window.location.href = 'index.html'
     }
-    e.preventDefault();
 };
 
 
