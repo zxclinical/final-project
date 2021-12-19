@@ -122,14 +122,14 @@ nav ul li a{
     visibility: hidden;
     position: absolute;
     top: 2rem;
-    right: 10rem;
+    right: 12rem;
 }
 .form-control small{
     z-index: 1;
     visibility: hidden;
     position: absolute;
     bottom: 1rem;
-    left: 9.5rem;
+    left: 10.5rem;
 }
 .form-control.success input{
     border: 2px solid #2ecc71;
@@ -212,7 +212,7 @@ nav ul li a{
     cursor: pointer;
 }
 
-@media (max-width:960px){
+@media (max-width: 960px){
     .logo{
         font-size: 1.5rem;
         padding: 0 3rem !important; 
@@ -225,6 +225,12 @@ nav ul li a{
     }
     .form-control__submit-button{
         width: 40vw;
+    }
+    .form-control i{
+        left: 28rem;
+    }
+    .form-control small{
+        left: 0;
     }
 }
 @media (max-width: 768px) {
@@ -257,7 +263,40 @@ nav ul li a{
         left:0;
         z-index: 2;
     }
+    .form-control i{
+        left: 22rem;
+    }
+    .form-control small{
+        left: 0;
+    }
 }
+
+@media (max-width: 576px){
+    .form-control i{
+        left: 14rem;
+    }
+    .form-control small{
+        left: 0;
+    }
+}
+@media (max-width: 380px){
+    .form-control i{
+        left: 10rem;
+    }
+    .form-control small{
+        left: 0;
+    }
+}
+@media (max-width: 320px){
+    .form-control i{
+        left: 9rem;
+    }
+    .form-control small{
+        left: 0;
+        bottom: -.5rem;
+    }
+}
+
 
 .container{
     max-width: 1170px;
