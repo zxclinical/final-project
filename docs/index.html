@@ -1,86 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book Library - Home Page</title>
-    <link rel="stylesheet" href="main/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/d99af6f76f.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <ul class="nav-left">
-          <li><a href="#" class="logo">Library</a></li>
-          <li>
-            <div class="dropdown">
-              <button class="dropbtn" onclick="myFunction()">
-                Books
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content" id="myDropdown">
-                <a href="#">Popular</a>
-                <a href="bestseller.html">Best seller</a>
-                <div class="dropdown">
-                    <button class="dropbtn" onclick="myFunction()">
-                      Genre
-                      <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content" id="myDropdown">
-                        <a href="#">Popular</a>
-                        <a href="#">Best seller</a>
-                    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Library - Home Page</title>
+  <link rel="stylesheet" href="main/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/d99af6f76f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul class="nav-left">
+        <li><a href="#" class="logo">Library</a></li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">
+              Books
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="#">Popular</a>
+              <a href="bestseller.html">Best seller</a>
+              <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">
+                  Genre
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="#">Popular</a>
+                  <a href="#">Best seller</a>
                 </div>
-                </div>
+              </div>
             </div>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a class="active" href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="contact.html">Contacts</a>
-          </li>
-          <li class="guest">
-            <a href="login.html">Login</a>
-          </li>
-          <li class="guest">
-            <a href="registration.html">Registration</a>
-          </li>
-          <li class="user" style="display: none;">
-            Тест
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <div class="container">
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a class="active" href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="contact.html">Contacts</a>
+        </li>
+        <li class="guest">
+          <a href="login.html">Login</a>
+        </li>
+        <li class="guest">
+          <a href="registration.html">Registration</a>
+        </li>
+        <li class="admin">
+          <a href="admin.html">Admin Panel</a>
+        </li>
+        <li class="user">
+          <a onclick="logOut();" id="sign-out">Log out</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="content-section">
+      <div class="content-section-header">
+        <a href="">Popular</a>
+      </div>
+      <div class="content-section-books slider">
+        <div>
+          <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+          Insomnia
+        </div>
+        <div>
+          <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546910265l/2.jpg"
+            width="100%" height="308px" />
+          Harry Potter and the Order of the Phoenix
+        </div>
+        <div>
+          <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+          Insomnia
+        </div>
+        <div>
+          <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+          Insomnia
+        </div>
+        <div>
+          <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+          Insomnia
+        </div>
+        <div>
+          <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+          Insomnia
+        </div>
+        <div>
+          <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+          Insomnia
+        </div>
+      </div>
+    </div>
+    <div class="content-section">
+      <div class="content-section-header">
+        <a href="">Best Seller</a>
+      </div>
+      <div class="content-section-books slider">
+        <div>
+          <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+          Insomnia
+        </div>
+        <div>
+          <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+          Insomnia
+        </div>
+        <div>
+          <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+          Insomnia
+        </div>
+        <div>
+          <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+          Insomnia
+        </div>
+        <div>
+          <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+          Insomnia
+        </div>
+        <div>
+          <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+          Insomnia
+        </div>
+        <div>
+          <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
+          Insomnia
+        </div>
+      </div>
       <div class="content-section">
         <div class="content-section-header">
-          <a href="">Popular</a>
+          <a href="">Horror</a>
         </div>
         <div class="content-section-books slider">
           <div>
@@ -88,41 +152,6 @@
             Insomnia
           </div>
           <div>
-            <img
-              src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1546910265l/2.jpg"
-              width="100%"
-              height="308px"
-            />
-            Harry Potter and the Order of the Phoenix
-          </div>
-          <div>
-            <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
-            Insomnia
-          </div>
-          <div>
-            <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
-            Insomnia
-          </div>
-          <div>
-            <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
-            Insomnia
-          </div>
-          <div>
-            <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
-            Insomnia
-          </div>
-          <div>
-            <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
-            Insomnia
-          </div>
-        </div>
-      </div>
-      <div class="content-section">
-        <div class="content-section-header">
-          <a href="">Best Seller</a>
-        </div>
-        <div class="content-section-books slider">
-          <div>
             <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
             Insomnia
           </div>
@@ -145,118 +174,70 @@
           <div>
             <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
             Insomnia
-          </div>
-          <div>
-            <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
-            Insomnia
-          </div>
-        </div>
-        <div class="content-section">
-          <div class="content-section-header">
-            <a href="">Horror</a>
-          </div>
-          <div class="content-section-books slider">
-            <div>
-              <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
-              Insomnia
-            </div>
-            <div>
-              <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
-              Insomnia
-            </div>
-            <div>
-              <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
-              Insomnia
-            </div>
-            <div>
-              <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
-              Insomnia
-            </div>
-            <div>
-              <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
-              Insomnia
-            </div>
-            <div>
-              <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
-              Insomnia
-            </div>
-            <div>
-              <img src="https://covers.openlibrary.org/b/id/8447714-M.jpg" />
-              Insomnia
-            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="footer-content">
-        <div class="footer-nav">
-            <div class="footer-col">
-                <p>About us</p>
-                <ul>
-                    <li>Our company</li>
-                    <li>Mission</li>
-                    <li>Careers</li>
-                    <li>Terms</li>
-                    <li>Privacy</li>
-                </ul>
-              </div>
-              <div class="footer-col">
-                <p>Contact us</p>
-                <ul>
-                    <li>Our company</li>
-                    <li>Mission</li>
-                    <li>Careers</li>
-                    <li>Terms</li>
-                    <li>Privacy</li>
-                </ul>
-              </div>
-              <div class="footer-col">
-                <p>Support us</p>
-                <ul>
-                    <li>Our company</li>
-                    <li>Mission</li>
-                    <li>Careers</li>
-                    <li>Terms</li>
-                    <li>Privacy</li>
-                </ul>
-              </div>
-              <div class="footer-col">
-                <p>Social media</p>
-                <a href="https://www.facebook.com">
-                <img src="https://s.gr-assets.com/assets/site_footer/footer_facebook-ea4ab848f8e86c5f5c98311bc9495a1b.svg">
-                </a>
-                <a href="https://www.twitter.com">
-                <img src="https://s.gr-assets.com/assets/site_footer/footer_twitter-126b3ee80481a763f7fccb06ca03053c.svg">
-                </a>
-                <a href="https://www.instagram.com">
-                <img src="https://s.gr-assets.com/assets/site_footer/footer_instagram-d59e3887020f12bcdb12e6c539579d85.svg">
-                </a>
-                <a href="https://github.com/zxclinical/final-project">
-                <img src="images/github-mark.svg">
-                </a>
-              </div>
+  </div>
+  <div class="footer">
+    <div class="footer-content">
+      <div class="footer-nav">
+        <div class="footer-col">
+          <p>About us</p>
+          <ul>
+            <li>Our company</li>
+            <li>Mission</li>
+            <li>Careers</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
         </div>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2906.7711133177854!2d76.9087405900521!3d43.23525832947138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883692f027581ad%3A0x2426740f56437e63!2z0JzQtdC20LTRg9C90LDRgNC-0LTQvdGL0Lkg0YPQvdC40LLQtdGA0YHQuNGC0LXRgiDQuNC90YTQvtGA0LzQsNGG0LjQvtC90L3Ri9GFINGC0LXRhdC90L7Qu9C-0LPQuNC5!5e0!3m2!1sru!2skz!4v1639864132266!5m2!1sru!2skz"
-            width="1170"
-            height="350"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
+        <div class="footer-col">
+          <p>Contact us</p>
+          <ul>
+            <li>Our company</li>
+            <li>Mission</li>
+            <li>Careers</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p>Support us</p>
+          <ul>
+            <li>Our company</li>
+            <li>Mission</li>
+            <li>Careers</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p>Social media</p>
+          <a href="https://www.facebook.com">
+            <img src="https://s.gr-assets.com/assets/site_footer/footer_facebook-ea4ab848f8e86c5f5c98311bc9495a1b.svg">
+          </a>
+          <a href="https://www.twitter.com">
+            <img src="https://s.gr-assets.com/assets/site_footer/footer_twitter-126b3ee80481a763f7fccb06ca03053c.svg">
+          </a>
+          <a href="https://www.instagram.com">
+            <img src="https://s.gr-assets.com/assets/site_footer/footer_instagram-d59e3887020f12bcdb12e6c539579d85.svg">
+          </a>
+          <a href="https://github.com/zxclinical/final-project">
+            <img src="images/github-mark.svg">
+          </a>
+        </div>
       </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2906.7711133177854!2d76.9087405900521!3d43.23525832947138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883692f027581ad%3A0x2426740f56437e63!2z0JzQtdC20LTRg9C90LDRgNC-0LTQvdGL0Lkg0YPQvdC40LLQtdGA0YHQuNGC0LXRgiDQuNC90YTQvtGA0LzQsNGG0LjQvtC90L3Ri9GFINGC0LXRhdC90L7Qu9C-0LPQuNC5!5e0!3m2!1sru!2skz!4v1639864132266!5m2!1sru!2skz"
+        width="1170" height="350" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
     </div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
-      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script src="main/app.js"></script>
-  </body>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+    integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="main/app.js"></script>
+</body>
+
 </html>

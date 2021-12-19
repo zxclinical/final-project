@@ -47,10 +47,16 @@
                     <img src="images/profile.png" alt="signIn/signUp picture">
                     <form onsubmit="event.preventDefault();signIn();" autocomplete="off" id="login-form" class="form-control">
                         <div>
-                            <input required id="email" class="form-control__element" type="email" placeholder="Enter your email">
+                            <input id="email" class="form-control__element" type="email" placeholder="Enter your email">
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error Message</small>
                         </div>
                         <div>
-                            <input required id="pwd" class="form-control__element" type="password" placeholder="Enter your password">
+                            <input id="pwd" class="form-control__element" type="password" placeholder="Enter your password">
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error Message</small>
                         </div>
                         <div>
                             <input class="form-control__submit-button" type="submit" value="Sign In">
@@ -64,7 +70,7 @@
             </div>
         </div>
     </main>
-    <script src="main/app.js"></script>
+    <script src="main/signin.js"></script>
 </body>
 
 </html>
