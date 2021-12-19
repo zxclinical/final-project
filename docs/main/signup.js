@@ -46,10 +46,12 @@ function checkInput() {
 
     if (pwdValue === "") {
         setErrorFor(pwd, 'Password cannot be blank');
-    } else if (pwdValue.length > 15){
-        setErrorFor(pwd, 'Password length should be less than 15 characters');
+    } else if (pwdValue.length > 20){
+        setErrorFor(pwd, 'Password length should be less than 20 characters');
     } else if (pwdValue.length < 8){
         setErrorFor(pwd, 'Password length should be at least 8 charachter');
+    } else if (!checkPwd(pwdValue)){
+        setErrorFor(pwd, 'Password should contain at least 1 digit, 1 lower case, 1 upper case letter');
     }
      else {
         setSuccessFor(pwd);
@@ -73,6 +75,9 @@ function setSuccessFor(input) {
 
 function checkEmail(email) {
     return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+}
+function checkPwd(pwd){
+    return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/.test(pwd);
 }
 
 const signUp = () => {
