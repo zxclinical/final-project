@@ -29,7 +29,21 @@
         <label for="check" class="checkbtn">
           <i class="fas fa-bars"></i>
         </label>
-        <a href="#" class="logo">Library</a>
+        <ul class="nav-left">
+            <li><a href="#" class="logo">Library</a></li>
+            <li>
+              <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">
+                  Books
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="popular.html">Popular</a>
+                  <a href="bestseller.html">Best seller</a>
+                </div>
+              </div>
+            </li>
+          </ul>
         <ul>
             <li>
                 <a href="index.html">Home</a>
