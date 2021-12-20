@@ -52,7 +52,6 @@ nav{
     position: absolute;
     background-color: #6b6b6b;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
   }
 
 .dropdown-content a {
@@ -83,7 +82,7 @@ nav{
   }
 nav ul{
     float: right;
-    margin-right: 3rem;
+    margin-right: 4rem;
 }
 nav ul li{
     display: inline-block;
@@ -114,20 +113,23 @@ nav ul li a{
     display: none;
 }
 .form-control{
+    z-index: 1;
     position: relative;
     padding-bottom: 20px;
 }
 .form-control i{
+    z-index: 1;
     visibility: hidden;
     position: absolute;
     top: 2rem;
-    right: 10rem;
+    right: 12rem;
 }
 .form-control small{
+    z-index: 1;
     visibility: hidden;
     position: absolute;
     bottom: 1rem;
-    left: 9.5rem;
+    left: 10.5rem;
 }
 .form-control.success input{
     border: 2px solid #2ecc71;
@@ -151,7 +153,9 @@ nav ul li a{
     margin: auto;
     text-align: center;
 }
-
+.form p{
+    margin: 0 0 1rem 0;
+}
 .form-control h2{
     font-size: 1.5rem;
     margin-top: 1rem;
@@ -182,7 +186,7 @@ nav ul li a{
     text-align: center;
 }
 .form-image img{
-    width: 15rem;
+    width: 12rem;
     margin: auto;
 }
 .table{
@@ -199,8 +203,16 @@ nav ul li a{
     text-align: center;
     margin-top: 1rem;
 }
+.user{
+    display:none;
+    cursor: pointer;
+}
+.admin{
+    display: none;
+    cursor: pointer;
+}
 
-@media (max-width:960px){
+@media (max-width: 960px){
     .logo{
         font-size: 1.5rem;
         padding: 0 3rem !important; 
@@ -213,6 +225,12 @@ nav ul li a{
     }
     .form-control__submit-button{
         width: 40vw;
+    }
+    .form-control i{
+        left: 28rem;
+    }
+    .form-control small{
+        left: 0;
     }
 }
 @media (max-width: 768px) {
@@ -242,12 +260,46 @@ nav ul li a{
         color: #E1DCC5;
     }
     #check:checked ~ ul{
-        left:0
+        left:0;
+        z-index: 2;
+    }
+    .form-control i{
+        left: 22rem;
+    }
+    .form-control small{
+        left: 0;
     }
     .container{
         width: 100%;
     }
 }
+
+@media (max-width: 576px){
+    .form-control i{
+        left: 14rem;
+    }
+    .form-control small{
+        left: 0;
+    }
+}
+@media (max-width: 380px){
+    .form-control i{
+        left: 10rem;
+    }
+    .form-control small{
+        left: 0;
+    }
+}
+@media (max-width: 320px){
+    .form-control i{
+        left: 9rem;
+    }
+    .form-control small{
+        left: 0;
+        bottom: -.5rem;
+    }
+}
+
 
 .container{
     max-width: 1170px;
