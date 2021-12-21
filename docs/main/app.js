@@ -59,6 +59,15 @@ $('.slider').slick({
             }
         },
         {
+            breakpoint: 540,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 2
+            }
+        },
+        {
             breakpoint: 480,
             settings: {
                 arrows: false,
