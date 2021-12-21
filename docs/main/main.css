@@ -492,10 +492,11 @@ td {
   grid-gap: 32 px;
   align-items: end;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 9fr 1fr;
 }
 
 .content-books p {
+    margin-bottom: 8px;
   align-items: flex-end;
   display: flex;
   flex-wrap: wrap;
@@ -510,10 +511,9 @@ td {
 }
 
 .content-books div h3 {
-  margin-top: 20px;
-  display: inline;
+  margin: 20px 20px 0px 20px;
 }
-.content-books div h4 {
-    margin-top: 20px;
-  }
-  
+.content-books div h4{
+  margin: 0px 10px 10px 10px;
+}
+
