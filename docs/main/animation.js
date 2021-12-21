@@ -3,4 +3,3 @@ $(window).on('load', function(){
     $(".form-image").slideDown("slow")
 });
 
-new WOW().init();

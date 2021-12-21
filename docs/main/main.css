@@ -556,6 +556,9 @@ td {
     .container {
         width: 100%;
     }
+    .box{
+        text-align: center;
+    }
 }
 
 @media (max-width: 576px) {
