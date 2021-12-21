@@ -217,7 +217,7 @@ nav ul li a:hover {
     margin-top: 1rem;
     text-align: center;
     display: inline-block;
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 
 .form-image img {
@@ -532,7 +532,9 @@ td {
         left: 0;
         z-index: 2;
     }
-
+    .form-image{
+        margin-top: 5rem
+    }
 }
 
 @media (max-width: 768px) {
