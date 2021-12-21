@@ -5,22 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Library - Home Page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="main/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/d99af6f76f.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@600;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/d99af6f76f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   </head>
   <body>
     <header>
@@ -387,9 +381,317 @@
               <img src="images/github-mark.svg" />
             </a>
           </div>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="active" href="about.html">About</a>
+        </li>
+        <li>
+          <a href="contact.html">Contacts</a>
+        </li>
+        <li class="guest">
+          <a href="login.html">Login</a>
+        </li>
+        <li class="guest">
+          <a href="registration.html">Registration</a>
+        </li>
+        <li class="admin">
+          <a href="admin.html">Admin Panel</a>
+        </li>
+        <li class="user">
+          <a onclick="logOut();" id="sign-out">Log out</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="wrapper">
+    <div class="box wow animate__animated animate__backInLeft">
+      <p>
+        A book is a medium for recording information in the form of writing or
+        images, typically composed of many pages (made of papyrus, parchment,
+        vellum, or paper) bound together and protected by a cover. The
+        technical term for this physical arrangement is codex (plural,
+        codices). In the history of hand-held physical supports for extended
+        written compositions or records, the codex replaces its predecessor,
+        the scroll. A single sheet in a codex is a leaf and each side of a
+        leaf is a page.
+      </p>
+    </div>
+    <hr />
+    <div class="box wow animate__animated animate__backInRight">
+      <h3>Genres</h3>
+      <p>
+        Writing genres (more commonly known as literary genres) are categories
+        that distinguish literature (including works of prose, poetry, drama,
+        hybrid forms, etc.) based on some set of stylistic criteria. Sharing
+        literary conventions, they typically consist of similarities in
+        theme/topic, style, tropes, and storytelling devices; common settings
+        and character types; and/or formulaic patterns of character
+        interactions and events, and an overall predictable form.
+      </p>
+    </div>
+    <hr />
+    <div class="box wow animate__animated animate__backInLeft">
+      <h3>Action and Adventure</h3>
+      <p>
+        Action and adventure books constantly have you on the edge of your
+        seat with excitement, as your fave main character repeatedly finds
+        themselves in high stakes situations. The protagonist has an ultimate
+        goal to achieve and is always put in risky, often dangerous
+        situations. This genre typically crosses over with others like
+        mystery, crime, sci-fi, and fantasy.
+      </p>
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572292455-51rxEvLljUL.jpg?crop=1xw:0.972xh;center,top&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572292481-41TxXqToCCL.jpg?crop=0.952xw:1xh;center,top&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572292506-41A0yff934L.jpg?crop=1xw:0.999xh;center,top&resize=320%3A%2A" />
+    </div>
+    <hr />
+    <div class="box wow animate__animated animate__backInRight">
+      <h3>Classics</h3>
+      <p>
+        You may think of these books as the throwback readings you were
+        assigned in English class. The classics have been around for decades,
+        and were often groundbreaking stories at their publish time, but have
+        continued to be impactful for generations, serving as the foundation
+        for many popular works we read today.
+      </p>
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572292658-51IXWZzlgSL.jpg?crop=1xw:0.996xh;center,top&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572292680-51xJASXQJwL.jpg?crop=1.00xw:0.978xh;0,0.0120xh&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572292709-41Rdzbiqh7L.jpg?crop=1.00xw:0.974xh;0,0.0160xh&resize=320%3A%2A" />
+    </div>
+    <hr />
+    <div class="box wow animate__animated animate__backInLeft">
+      <h3>Comic Book or Graphic Novel</h3>
+      <p>
+        The stories in comic books and graphic novels are presented to the
+        reader through engaging, sequential narrative art (illustrations and
+        typography) that's either presented in a specific design or the
+        traditional panel layout you find in comics. With both, you'll often
+        find the dialogue presented in the tell-tale "word balloons" next to
+        the respective characters.
+      </p>
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572292885-41ZJD5Dw5KL.jpg?crop=1.00xw:0.962xh;0,0.0200xh&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572292913-51S12ntkIbL.jpg?crop=1xw:0.975xh;center,top&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572292943-418D9yYGB3L.jpg?crop=0.900xw:1.00xh;0.0916xw,0&resize=320%3A%2A" />
+    </div>
+    <hr />
+    <div class="box wow animate__animated animate__backInRight">
+      <h3>Detective and Mystery</h3>
+      <p>
+        The plot always revolves around a crime of sorts that must be
+        solved—or foiled—by the protagonists.
+      </p>
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572293115-41zqZwXZ-WL.jpg?crop=1.00xw:0.984xh;0,0.00600xh&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572293468-516dZVA7rQL.jpg?crop=0.958xw:1xh;center,top&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572293489-51MlxNgCsyL.jpg?crop=1.00xw:0.932xh;0,0.0440xh&resize=320%3A%2A" />
+    </div>
+    <hr />
+    <div class="box wow animate__animated animate__backInLeft">
+      <h3>Fantasy</h3>
+      <p>
+        While usually set in a fictional imagined world—in opposition,
+        Ta-Nehisi's Coates's The Water Dancer takes place in the very real
+        world of American slavery—fantasy books include prominent elements of
+        magic, mythology, or the supernatural.
+      </p>
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572293716-51ItgiZw5dL.jpg?crop=1xw:0.987xh;center,top&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572293746-51dzuwLmm-L.jpg?crop=1.00xw:0.932xh;0,0.0540xh&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572293766-41cUxNtr5-L.jpg?crop=1.00xw:0.986xh;0,0.00800xh&resize=320%3A%2A" />
+    </div>
+    <hr />
+    <div class="box wow animate__animated animate__backInRight">
+      <h3>Historical Fiction</h3>
+      <p>
+        These books are based in a time period set in the past decades, often
+        against the backdrop of significant (real) historical events.
+      </p>
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572293965-51D9LgMgL.jpg?crop=1xw:0.999xh;center,top&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572294012-51Zr6Pd32ML.jpg?crop=1xw:0.996xh;center,top&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572294103-51O9HqW8ZAL.jpg?crop=1.00xw:0.974xh;0,0.0200xh&resize=320%3A%2A" />
+    </div>
+    <hr />
+    <div class="box wow animate__animated animate__backInLeft">
+      <h3>Horror</h3>
+      <p>
+        Meant to cause discomfort and fear for both the character and readers,
+        horror writers often make use of supernatural and paranormal elements
+        in morbid stories that are sometimes a little too realistic. The
+        master of horror fiction? None other than Stephen King.
+      </p>
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572295234-51dRjo8NJeL.jpg?crop=1.00xw:0.896xh;0.00336xw,0.102xh&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572295266-51gyXcg1P2L.jpg?crop=1.00xw:0.974xh;0,0.0240xh&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572295284-41sRIihnXzL.jpg?crop=1xw:0.996xh;center,top&resize=320%3A%2A" />
+    </div>
+    <hr />
+    <div class="box wow animate__animated animate__backInRight">
+      <h3>Literary Fiction</h3>
+      <p>
+        Though it can be seen as a broad genre that encompasses many others,
+        literary fiction refers to the perceived artistic writing style of the
+        author. Their prose is meant to evoke deep thought through stories
+        that offer personal or social commentary on a particular theme.
+      </p>
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572295477-51j5p18mJNL.jpg?crop=1xw:0.996xh;center,top&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572295502-512WyIl2uSL.jpg?crop=1xw:0.990xh;center,top&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572295539-51FiW7t0GuL.jpg?crop=1xw:0.993xh;center,top&resize=320%3A%2A" />
+    </div>
+    <hr />
+    <div class="box wow animate__animated animate__backInLeft">
+      <h3>Romance</h3>
+      <p>
+        Oh romance, how could we ever resist you? The genre that makes your
+        heart all warm and fuzzy focuses on the love story of the main
+        protagonists. This world of fiction is extremely wide-reaching in and
+        of itself, as it has a variety of sub-genres including: contemporary
+        romance, historical, paranormal, and the steamier erotica. If you're
+        in need of any suggestions, we've got a list of the best romances of
+        all time and the top picks of the year.
+      </p>
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572296390-51fiEAOae4L.jpg?crop=1.00xw:0.950xh;0,0.0240xh&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572296414-51QdlkQL.jpg?crop=1xw:1xh;center,top&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572296440-41RxnbDaefL.jpg?crop=1.00xw:0.920xh;0,0.0800xh&resize=320%3A%2A" />
+    </div>
+    <hr />
+    <div class="box wow animate__animated animate__backInRight">
+      <h3>Science Fiction (Sci-Fi)</h3>
+      <p>
+        Though they're often thought of in the same vein as fantasy, what
+        distinguishes science fiction stories is that they lean heavily on
+        themes of technology and future science. You'll find apocalyptic and
+        dystopian novels in the sci-fi genre as well.
+      </p>
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572296624-419TWZk7luL.jpg?crop=1xw:0.987xh;center,top&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572296661-41nphb8vbPL.jpg?crop=0.978xw:1xh;center,top&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572296688-410ZirPKXKL.jpg?crop=1xw:0.999xh;center,top&resize=320%3A%2A" />
+    </div>
+    <hr />
+    <div class="box wow animate__animated animate__backInLeft">
+      <h3>Short Stories</h3>
+      <p>
+        Though they encompass many of the genres we describe here, short
+        stories are brief prose that are significantly, well, shorter than
+        novels. Writers strictly tell their narratives through a specific
+        theme and a series of brief scenes, though many authors compile these
+        stories in wide-ranging collections, as featured below.
+      </p>
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572297115-51G2GGjeBjL.jpg?crop=1.00xw:0.962xh;0,0.0180xh&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572297319-51Y82I5ACdL.jpg?crop=1.00xw:0.962xh;0,0.0100xh&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572297335-51XhaIdxkFL.jpg?crop=0.989xw:1xh;center,top&resize=320%3A%2A" />
+    </div>
+    <hr />
+    <div class="box wow animate__animated animate__backInRight">
+      <h3>Suspense and Thrillers</h3>
+      <p>
+        While they often encompass the same elements as mystery books, the
+        suspense and thriller genre sees the hero attempt to stop and defeat
+        the villain to save their own life rather than uncover a specific
+        crime. Thrillers typically include cliffhangers and deception to
+        encourage suspense, while pulling the wool over the eyes of both the
+        main character and reader.
+      </p>
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572297615-416TH3igfOL.jpg?crop=1xw:0.972xh;center,top&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572297634-51wT1Ny84sL.jpg?crop=1.00xw:0.974xh;0,0.0140xh&resize=320%3A%2A" />
+      <img
+        src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1572297648-51U2hIUQgqL.jpg?crop=0.972xw:1xh;center,top&resize=320%3A%2A" />
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-content">
+      <div class="footer-nav">
+        <div class="footer-col">
+          <p>About us</p>
+          <ul>
+            <li>Our company</li>
+            <li>Mission</li>
+            <li>Careers</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p>Contact us</p>
+          <ul>
+            <li>Our company</li>
+            <li>Mission</li>
+            <li>Careers</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p>Support us</p>
+          <ul>
+            <li>Our company</li>
+            <li>Mission</li>
+            <li>Careers</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p>Social media</p>
+          <a href="https://www.facebook.com">
+            <img
+              src="https://s.gr-assets.com/assets/site_footer/footer_facebook-ea4ab848f8e86c5f5c98311bc9495a1b.svg" />
+          </a>
+          <a href="https://www.twitter.com">
+            <img src="https://s.gr-assets.com/assets/site_footer/footer_twitter-126b3ee80481a763f7fccb06ca03053c.svg" />
+          </a>
+          <a href="https://www.instagram.com">
+            <img
+              src="https://s.gr-assets.com/assets/site_footer/footer_instagram-d59e3887020f12bcdb12e6c539579d85.svg" />
+          </a>
+          <a href="https://github.com/zxclinical/final-project">
+            <img src="images/github-mark.svg" />
+          </a>
         </div>
       </div>
     </div>
-    <script src="main/app.js"></script>
-  </body>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="main/animation.js"></script>
+  <script src="main/app.js"></script>
+</body>
+
 </html>

@@ -171,6 +171,7 @@ nav ul li a:hover {
   margin: 1rem auto;
   border: none;
   border-radius: 0.5rem;
+  display: none;
 }
 .form-control__element:focus {
   outline: none;
@@ -189,6 +190,7 @@ nav ul li a:hover {
   width: 100%;
   margin-top: 1rem;
   text-align: center;
+  display: none;
 }
 .form-image img {
   width: 12rem;
@@ -217,96 +219,6 @@ td {
   display: none;
   cursor: pointer;
 }
-
-@media (max-width: 960px) {
-  .logo {
-    font-size: 1.5rem;
-    padding: 0 3rem !important;
-  }
-  nav ul li a {
-    font-size: 1.1rem;
-  }
-  .form-control__element {
-    width: 50vw;
-  }
-  .form-control__submit-button {
-    width: 40vw;
-  }
-  .form-control i {
-    left: 28rem;
-  }
-  .form-control small {
-    left: 0;
-  }
-}
-@media (max-width: 768px) {
-  .checkbtn {
-    display: block;
-  }
-  nav ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: rgb(73, 73, 73);
-    top: 4rem;
-    left: +100%;
-    text-align: center;
-    transition: all 0.5s;
-  }
-  nav ul li {
-    display: block;
-    margin: 4rem 0;
-    line-height: 2rem;
-  }
-  nav ul li a {
-    font-size: 1.5rem;
-  }
-  nav ul li a:hover,
-  .active {
-    background: none;
-    color: #e1dcc5;
-  }
-  #check:checked ~ ul {
-    left: 0;
-    z-index: 2;
-  }
-  .form-control i {
-    left: 22rem;
-  }
-  .form-control small {
-    left: 0;
-  }
-  .container {
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .form-control i {
-    left: 14rem;
-  }
-  .form-control small {
-    left: 0;
-  }
-}
-@media (max-width: 380px) {
-  .form-control i {
-    left: 10rem;
-  }
-  .form-control small {
-    left: 0;
-  }
-}
-@media (max-width: 320px) {
-  .form-control i {
-    left: 9rem;
-  }
-  .form-control small {
-    left: 0;
-    bottom: -0.5rem;
-  }
-}
-
 .container {
   max-width: 1170px;
   margin: auto;
@@ -450,7 +362,6 @@ td {
   margin-right: 17px;
 }
 .contact-wrapper {
-  position: relative;
   height: 100vh;
 }
 
@@ -519,3 +430,91 @@ td {
   margin: 0px 10px 10px 10px;
 }
 
+@media (max-width: 960px) {
+    .logo {
+      font-size: 1.5rem;
+      padding: 0 3rem !important;
+    }
+    nav ul li a {
+      font-size: 1.1rem;
+    }
+    .form-control__element {
+      width: 50vw;
+    }
+    .form-control__submit-button {
+      width: 40vw;
+    }
+    .form-control i {
+      left: 28rem;
+    }
+    .form-control small {
+      left: 0;
+    }
+  }
+  @media (max-width: 768px) {
+    .checkbtn {
+      display: block;
+    }
+    nav ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: rgb(73, 73, 73);
+      top: 4rem;
+      left: +100%;
+      text-align: center;
+      transition: all 0.5s;
+    }
+    nav ul li {
+      display: block;
+      margin: 4rem 0;
+      line-height: 2rem;
+    }
+    nav ul li a {
+      font-size: 1.5rem;
+    }
+    nav ul li a:hover,
+    .active {
+      background: none;
+      color: #e1dcc5;
+    }
+    #check:checked ~ ul {
+      left: 0;
+      z-index: 2;
+    }
+    .form-control i {
+      left: 22rem;
+    }
+    .form-control small {
+      left: 0;
+    }
+    .container {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .form-control i {
+      left: 14rem;
+    }
+    .form-control small {
+      left: 0;
+    }
+  }
+  @media (max-width: 380px) {
+    .form-control i {
+      left: 10rem;
+    }
+    .form-control small {
+      left: 0;
+    }
+  }
+  @media (max-width: 320px) {
+    .form-control i {
+      left: 9rem;
+    }
+    .form-control small {
+      left: 0;
+      bottom: -0.5rem;
+    }
+  }
