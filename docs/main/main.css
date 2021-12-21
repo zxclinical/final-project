@@ -337,6 +337,10 @@ td {
   background-color: #ffffff;
 }
 
+.content-section-books a{
+    color: black;
+  }
+
 .content-section-books img {
   width: 185px;
   height: 305px;
