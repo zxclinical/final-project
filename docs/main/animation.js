@@ -1,5 +1,4 @@
 $(window).on('load', function(){
-    $(".form-control__element").slideDown("slow"),
-    $(".form-image").slideDown("slow")
+    $(".form-control__element").slideDown("slow")
 });
 

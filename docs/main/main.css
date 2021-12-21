@@ -26,9 +26,9 @@ nav {
 
 .logo {
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 4rem;
-    padding: 0 5rem;
+    padding: 0 3rem;
     display: inline-block;
     border-radius: 0;
 }
@@ -36,19 +36,19 @@ nav {
 .dropdown {
     color: #ffffff;
     display: inline-block;
-    overflow: hidden;
 }
 
 .dropdown .dropbtn {
     cursor: pointer;
-    font-size: 20px;
     border: none;
     outline: none;
-    color: white;
-    padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
-    margin: 0;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 
 .dropdown-content {
@@ -57,6 +57,7 @@ nav {
     position: absolute;
     background-color: #6b6b6b;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 3;
 }
 
 .dropdown-content a {
@@ -215,7 +216,8 @@ nav ul li a:hover {
     width: 100%;
     margin-top: 1rem;
     text-align: center;
-    display: none;
+    display: inline-block;
+    margin-top: 5rem;
 }
 
 .form-image img {
@@ -469,7 +471,6 @@ td {
         font-size: 1.5rem;
         padding: 0 3rem !important;
     }
-
     nav ul li a {
         font-size: 1.1rem;
     }
@@ -489,9 +490,6 @@ td {
     .form-control small {
         left: 0;
     }
-}
-
-@media (max-width: 768px) {
     .checkbtn {
         display: block;
     }
@@ -503,16 +501,6 @@ td {
     .wrapper{
         padding-top: 3rem;
     }
-    .footer-nav{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100vw;
-    }
-    .footer-col{
-        text-align: center;
-        width: 100vw;
-    }
-
     nav ul {
         position: fixed;
         width: 100%;
@@ -530,8 +518,8 @@ td {
         line-height: 2rem;
     }
 
-    nav ul li a {
-        font-size: 1.5rem;
+    nav ul li a, .dropbtn {
+        font-size: 1.5rem !important;
     }
 
     nav ul li a:hover,
@@ -545,6 +533,18 @@ td {
         z-index: 2;
     }
 
+}
+
+@media (max-width: 768px) {
+    .footer-nav{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+    .footer-col{
+        text-align: center;
+        width: 100vw;
+    }
     .form-control i {
         left: 22rem;
     }
@@ -555,6 +555,7 @@ td {
 
     .container {
         width: 100%;
+        padding-top: 4rem;
     }
     .box{
         text-align: center;

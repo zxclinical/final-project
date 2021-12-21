@@ -23,7 +23,7 @@ const signIn = () => {
         setErrorFor(document.getElementById('email'), '');
         setErrorFor(document.getElementById('pwd'), 'Email or password are incorrect');
     }
-    else if (exists && pwd=="adminadmin"){
+    else if (exists && pwd=="Adminadmin1"){
         alert("Welcome " + email);
         setSuccessFor(document.getElementById('email'));
         setSuccessFor(document.getElementById('pwd'));

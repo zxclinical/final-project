@@ -1,344 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book Library - Home Page</title>
-    <link rel="stylesheet" href="main/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/d99af6f76f.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <ul class="nav-left">
-          <li><a href="#" class="logo">Library</a></li>
-          <li>
-            <div class="dropdown active">
-              <button class="dropbtn" onclick="myFunction()">
-                Books
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content" id="myDropdown">
-                <a href="popular.html">Popular</a>
-                <a href="bestseller.html">Best seller</a>
-                <a href="horror.html">Horror</a>
-                <a href="fantasy.html">Fantasy</a>
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Library - Fantasy</title>
+  <link rel="stylesheet" href="main/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/d99af6f76f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <a href="#" class="logo">Library</a>
+      <ul>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">
+              Books
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="popular.html">Popular</a>
+              <a href="bestseller.html">Best seller</a>
+              <a href="horror.html">Horror</a>
+              <a href="fantasy.html">Fantasy</a>
             </div>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="contact.html">Contacts</a>
-          </li>
-          <li>
-            <a href="login.html">Login</a>
-          </li>
-          <li>
-            <a href="registration.html">Registration</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <div class="container">
-      <div class="content-section">
-        <div class="content-section-header">
-          <p>Fantasy</p>
+          </div>
+        </li>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="contact.html">Contacts</a>
+        </li>
+        <li class="guest">
+          <a href="login.html">Login</a>
+        </li>
+        <li class="guest">
+          <a href="registration.html">Registration</a>
+        </li>
+        <li class="admin">
+          <a href="admin.html">Admin Panel</a>
+        </li>
+        <li class="user">
+          <a onclick="logOut();">Sign Out</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="content-section">
+      <div class="content-section-header">
+        <p>Fantasy</p>
+      </div>
+      <div class="content-books">
+        <div>
+          <img
+            src="https://assets-eu-01.kc-usercontent.com/bcd02f72-b50c-0179-8b4b-5e44f5340bd4/db6c591d-a5bd-40ed-b578-3047130ffc57/Black%20Leopard,%20red%20Wolf.jpg" />
+          <h3 id="black_red">Black Leopard, Red Wolf</h3>
+          <h4>by Marlon James</h4>
+          <p>
+            Black Leopard, Red Wolf is the first fantasy novel in Marlon
+            James's Dark Star Trilogy. A New York Times bestseller, National
+            Book Award finalist and Ray Bradbury Prize winner, it's no
+            stranger to accolades.
+          </p>
+          <p>
+            Set in an African-inspired fantasy world, the first book in the
+            series follows Tracker, a mercenary with an extraordinary ability
+            to follow scents, as he hunts down a missing boy. On his journey
+            Tracker's crosses paths with strange companions, from
+            shapeshifters to giants, who seek the same child and hide their
+            own secrets . . .
+          </p>
         </div>
-        <div class="content-books">
-          <div>
-            <img
-              src="https://assets-eu-01.kc-usercontent.com/bcd02f72-b50c-0179-8b4b-5e44f5340bd4/db6c591d-a5bd-40ed-b578-3047130ffc57/Black%20Leopard,%20red%20Wolf.jpg"
-            />
-            <h3 id="black_red">Black Leopard, Red Wolf</h3>
-            <h4>by Marlon James</h4>
-            <p>
-              Black Leopard, Red Wolf is the first fantasy novel in Marlon
-              James's Dark Star Trilogy. A New York Times bestseller, National
-              Book Award finalist and Ray Bradbury Prize winner, it's no
-              stranger to accolades.
-            </p>
-            <p>
-              Set in an African-inspired fantasy world, the first book in the
-              series follows Tracker, a mercenary with an extraordinary ability
-              to follow scents, as he hunts down a missing boy. On his journey
-              Tracker's crosses paths with strange companions, from
-              shapeshifters to giants, who seek the same child and hide their
-              own secrets . . .
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://assets-eu-01.kc-usercontent.com/bcd02f72-b50c-0179-8b4b-5e44f5340bd4/e27b17be-ce5c-4734-b30e-09c020822e44/lord-of-the-rings-book-jacket.jpg"
-            />
-            <h3 id="rings">The Lord of the Rings</h3>
-            <h4>by J.R.R. Tolkien</h4>
-            <p>
-              J.R.R. Tolkien’s trilogy is a classic of fantasy fiction and is a
-              must-read for all fantasy fans. The story of the hobbit Frodo and
-              his epic quest to reach Mount Doom and defeat the Dark Lord,
-              Sauron, by destroying the One Ring, Tolkien’s epic fantasy was
-              adapted into three of the most popular films of the 2000s. One of
-              the best fantasy books ever written.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://ik.imagekit.io/panmac/tr:q-75,di-placeholder_portrait_aMjPtD9YZ.jpg,w-350,pr-true,bl/edition/9781509871353.jpg"
-            />
-            <h3 id="children">Children of Blood and Bone</h3>
-            <h4>by Tomi Adeyemi</h4>
-            <p>
-              Tomi Adeyemi’s YA fantasy book is the first in her West
-              African-inspired fantasy fiction series Legacy of Orisha. Zélie
-              remembers when Orisha was full of magic. When different clans
-              ruled with unique powers, including her Reaper mother who could
-              summon forth souls. But everything changed when the ruthless king
-              had anyone with powers killed. Now only a few people still have
-              the power to use magic, and they must stay hidden. Zélie is one of
-              those people, but now she has the chance to bring magic back to
-              her people and strike against the monarchy . . . Tomi Adeyemi is
-              the author of some on the best fantasy books for YA readers in
-              recent years.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://ik.imagekit.io/panmac/tr:q-75,di-placeholder_portrait_aMjPtD9YZ.jpg,w-350,pr-true,bl/edition/9781509879502.jpg"
-            />
-            <h3 id="kings">The Ruin of Kings</h3>
-            <h4>by Jenn Lyons</h4>
-            <p>
-              The hugely anticipated debut by Jenn Lyons is the first fantasy
-              book in the A Chorus of Dragons series. Brim-full of big ideas –
-              body-swapping, prophecy, rich worldbuilding and grim commentaries
-              on many aspects of empire – to name but a few, this is the tale of
-              Kihrin, a young prince cursed with bad luck and worse prophecy.
-              The Ruin of Kings is a fantastically complex and multi-layered
-              fantasy book, and characters like Doc and Galen, alongside
-              Kihrin's own well-balanced set of talents and flaws make this a
-              promising new fantasy series.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://ik.imagekit.io/panmac/tr:q-75,di-placeholder_portrait_aMjPtD9YZ.jpg,w-350,pr-true,bl/edition/9781447234579.jpg"
-            />
-            <h3 id="tiger">The Tiger and the Wolf</h3>
-            <h4>by Adrian Tchaikovsky</h4>
-            <p>
-              The Tiger and the Wolf is the British Fantasy Award-winning novel
-              from Adrian Tchaikovsky and the first book in his Echoes of the
-              Fall fantasy fiction series. Maniye is an outcast, the daughter of
-              the chieftain of the Wolf clan and the queen of the Tiger clan,
-              clans which have been deadly enemies for generations. Hiding a
-              deadly secret, the power to shapeshift into the form of both a
-              wolf and a tiger, she escapes. But Maniye is crucial to her
-              father’s plan to rule the north, and he is determined to get her
-              back. As she flees, priests foresee danger and rumours of war
-              spread . . .
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://ik.imagekit.io/panmac/tr:q-75,di-placeholder_portrait_aMjPtD9YZ.jpg,w-350,pr-true,bl/edition/9781529016147.jpg"
-            />
-            <h3 id="exile">Blood of an Exile</h3>
-            <h4>by Brian Naslund</h4>
-            <p>
-              In Brian Naslund's must-read debut fantasy novel we meet Bershad,
-              an adventurer sentenced to kill dragons for a living after being
-              caught trying to assassinate a fellow noble. When the king who
-              sentenced Bershad offers him a way out of his forced occupation
-              and exile, Bershad sees a way to earn redemption, but it won't be
-              easy. Blood of an Exile, the first book in the Dragons of Terra
-              series is packed with adventure and of course, lots of dragons.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://assets-eu-01.kc-usercontent.com/bcd02f72-b50c-0179-8b4b-5e44f5340bd4/b61060f2-8607-4860-b7c7-5c4b62486576/Eragon%20book%20cover.jpg"
-            />
-            <h3 id="eragon">Eragon</h3>
-            <h4>by Christopher Paolini</h4>
-            <p>
-              Eragon is the bestselling first instalment in Christopher
-              Paolini's beloved fantasy series, The Inheritance Cycle. At the
-              story’s opening, fifteen-year-old Eragon is a poor farmhand living
-              in Alagaësia, a land ruled over by the fallen dragon rider, and
-              now evil, Galbatorix. When Eragon finds a mysterious stone in the
-              mountains, he hopes it may hold some value, but his life is
-              changed forever when the strange polished stone, hatches . . .
-              Dragons were thought to be extinct . . . so when Saphira emerges
-              from her egg, Eragon raises her in secret until two dark Ra’zac
-              come looking for the stone.
-            </p>
-            <p>
-              Eragon’s once simple life is thrust into peril. In a world of
-              magic and unimaginable dangers, the fate of the entire Empire soon
-              rests upon his shoulders, and to survive he must take up the
-              legendary mantle of the once-peaceful Dragon Riders . . . but can
-              he? The story of an unbreakable bond between boy and dragon and
-              their fight to fulfil their destinies, Eragon has all the vital
-              components of a page-turning fantasy book. For those who love the
-              work of master storyteller Paolini, this year sees the release of
-              his unmissable science fiction debut To Sleep in a Sea of Stars.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://ik.imagekit.io/panmac/tr:q-75,di-placeholder_portrait_aMjPtD9YZ.jpg,w-350,pr-true,bl/edition/9781529080889.jpg"
-            />
-            <h3 id="light">A Marvellous Light</h3>
-            <h4>by Freya Marske</h4>
-            <p>
-              Set in an alternative Edwardian England, this is a comedy of
-              manners, manor houses, and hedge mazes: including a magic-infused
-              murder mystery and a delightful queer romance from debut author
-              Freya Marske. Young baronet Robin Blyth thought he was taking up a
-              minor governmental post. However, he's actually been appointed
-              parliamentary liaison to a secret magical society. If it weren’t
-              for this administrative error, he’d never have discovered the
-              incredible magic underlying his world. But he’ll need the help of
-              Edwin Courcey, his adversarial magical-society counterpart. Thrown
-              together, Robin and Edwin will discover a plot that threatens
-              every magician in the British Isles.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://ik.imagekit.io/panmac/tr:q-75,di-placeholder_portrait_aMjPtD9YZ.jpg,w-350,pr-true,bl/edition/9781529001358.jpg"
-            />
-            <h3 id="ever">The Ever After</h3>
-            <h4>by Amanda Hocking</h4>
-            <p>
-              Ulla Tulin is on a quest to uncover her past in the third fantasy
-              book in Amanda Hocking’s Omte Origins trilogy. In this epic final
-              adventure, Ulla fights to recover her lost memories in time to
-              battle the consequences of opening the bridge to Alfheim, the lost
-              First City. Could her forgotten heritage be the key to victory?
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://ik.imagekit.io/panmac/tr:q-75,di-placeholder_portrait_aMjPtD9YZ.jpg,w-350,pr-true,bl/edition/9781529001327.jpg"
-            />
-            <h3 id="flower">The Morning Flower</h3>
-            <h4>by Amanda Hocking</h4>
-            <p>
-              The Morning Flower is the highly anticipated second novel in
-              Amanda Hocking's fantasy series, the Omte Origins trilogy. As they
-              continue on their quest to find the key to Ulla's heritage, Ulla,
-              Pan and Eliana make an incredible discovery in the city of Merellä
-              and embark on a journey that takes them across the world to an
-              ancient city that may hold the answers they seek. But powerful
-              enemies are close behind – and they're catching up fast.
-            </p>
-            <p>
-              As Eliana faces an impossible choice with far-reaching
-              consequences, Ulla and Pan race to unlock the past and discover an
-              earth-shattering secret that will challenge everything they
-              thought they knew about the troll world. As their enemies draw
-              closer, friendships are pushed to their very limits . . . but will
-              they break?
-            </p>
-          </div>
+        <div>
+          <img
+            src="https://assets-eu-01.kc-usercontent.com/bcd02f72-b50c-0179-8b4b-5e44f5340bd4/e27b17be-ce5c-4734-b30e-09c020822e44/lord-of-the-rings-book-jacket.jpg" />
+          <h3 id="rings">The Lord of the Rings</h3>
+          <h4>by J.R.R. Tolkien</h4>
+          <p>
+            J.R.R. Tolkien’s trilogy is a classic of fantasy fiction and is a
+            must-read for all fantasy fans. The story of the hobbit Frodo and
+            his epic quest to reach Mount Doom and defeat the Dark Lord,
+            Sauron, by destroying the One Ring, Tolkien’s epic fantasy was
+            adapted into three of the most popular films of the 2000s. One of
+            the best fantasy books ever written.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://ik.imagekit.io/panmac/tr:q-75,di-placeholder_portrait_aMjPtD9YZ.jpg,w-350,pr-true,bl/edition/9781509871353.jpg" />
+          <h3 id="children">Children of Blood and Bone</h3>
+          <h4>by Tomi Adeyemi</h4>
+          <p>
+            Tomi Adeyemi’s YA fantasy book is the first in her West
+            African-inspired fantasy fiction series Legacy of Orisha. Zélie
+            remembers when Orisha was full of magic. When different clans
+            ruled with unique powers, including her Reaper mother who could
+            summon forth souls. But everything changed when the ruthless king
+            had anyone with powers killed. Now only a few people still have
+            the power to use magic, and they must stay hidden. Zélie is one of
+            those people, but now she has the chance to bring magic back to
+            her people and strike against the monarchy . . . Tomi Adeyemi is
+            the author of some on the best fantasy books for YA readers in
+            recent years.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://ik.imagekit.io/panmac/tr:q-75,di-placeholder_portrait_aMjPtD9YZ.jpg,w-350,pr-true,bl/edition/9781509879502.jpg" />
+          <h3 id="kings">The Ruin of Kings</h3>
+          <h4>by Jenn Lyons</h4>
+          <p>
+            The hugely anticipated debut by Jenn Lyons is the first fantasy
+            book in the A Chorus of Dragons series. Brim-full of big ideas –
+            body-swapping, prophecy, rich worldbuilding and grim commentaries
+            on many aspects of empire – to name but a few, this is the tale of
+            Kihrin, a young prince cursed with bad luck and worse prophecy.
+            The Ruin of Kings is a fantastically complex and multi-layered
+            fantasy book, and characters like Doc and Galen, alongside
+            Kihrin's own well-balanced set of talents and flaws make this a
+            promising new fantasy series.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://ik.imagekit.io/panmac/tr:q-75,di-placeholder_portrait_aMjPtD9YZ.jpg,w-350,pr-true,bl/edition/9781447234579.jpg" />
+          <h3 id="tiger">The Tiger and the Wolf</h3>
+          <h4>by Adrian Tchaikovsky</h4>
+          <p>
+            The Tiger and the Wolf is the British Fantasy Award-winning novel
+            from Adrian Tchaikovsky and the first book in his Echoes of the
+            Fall fantasy fiction series. Maniye is an outcast, the daughter of
+            the chieftain of the Wolf clan and the queen of the Tiger clan,
+            clans which have been deadly enemies for generations. Hiding a
+            deadly secret, the power to shapeshift into the form of both a
+            wolf and a tiger, she escapes. But Maniye is crucial to her
+            father’s plan to rule the north, and he is determined to get her
+            back. As she flees, priests foresee danger and rumours of war
+            spread . . .
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://ik.imagekit.io/panmac/tr:q-75,di-placeholder_portrait_aMjPtD9YZ.jpg,w-350,pr-true,bl/edition/9781529016147.jpg" />
+          <h3 id="exile">Blood of an Exile</h3>
+          <h4>by Brian Naslund</h4>
+          <p>
+            In Brian Naslund's must-read debut fantasy novel we meet Bershad,
+            an adventurer sentenced to kill dragons for a living after being
+            caught trying to assassinate a fellow noble. When the king who
+            sentenced Bershad offers him a way out of his forced occupation
+            and exile, Bershad sees a way to earn redemption, but it won't be
+            easy. Blood of an Exile, the first book in the Dragons of Terra
+            series is packed with adventure and of course, lots of dragons.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://assets-eu-01.kc-usercontent.com/bcd02f72-b50c-0179-8b4b-5e44f5340bd4/b61060f2-8607-4860-b7c7-5c4b62486576/Eragon%20book%20cover.jpg" />
+          <h3 id="eragon">Eragon</h3>
+          <h4>by Christopher Paolini</h4>
+          <p>
+            Eragon is the bestselling first instalment in Christopher
+            Paolini's beloved fantasy series, The Inheritance Cycle. At the
+            story’s opening, fifteen-year-old Eragon is a poor farmhand living
+            in Alagaësia, a land ruled over by the fallen dragon rider, and
+            now evil, Galbatorix. When Eragon finds a mysterious stone in the
+            mountains, he hopes it may hold some value, but his life is
+            changed forever when the strange polished stone, hatches . . .
+            Dragons were thought to be extinct . . . so when Saphira emerges
+            from her egg, Eragon raises her in secret until two dark Ra’zac
+            come looking for the stone.
+          </p>
+          <p>
+            Eragon’s once simple life is thrust into peril. In a world of
+            magic and unimaginable dangers, the fate of the entire Empire soon
+            rests upon his shoulders, and to survive he must take up the
+            legendary mantle of the once-peaceful Dragon Riders . . . but can
+            he? The story of an unbreakable bond between boy and dragon and
+            their fight to fulfil their destinies, Eragon has all the vital
+            components of a page-turning fantasy book. For those who love the
+            work of master storyteller Paolini, this year sees the release of
+            his unmissable science fiction debut To Sleep in a Sea of Stars.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://ik.imagekit.io/panmac/tr:q-75,di-placeholder_portrait_aMjPtD9YZ.jpg,w-350,pr-true,bl/edition/9781529080889.jpg" />
+          <h3 id="light">A Marvellous Light</h3>
+          <h4>by Freya Marske</h4>
+          <p>
+            Set in an alternative Edwardian England, this is a comedy of
+            manners, manor houses, and hedge mazes: including a magic-infused
+            murder mystery and a delightful queer romance from debut author
+            Freya Marske. Young baronet Robin Blyth thought he was taking up a
+            minor governmental post. However, he's actually been appointed
+            parliamentary liaison to a secret magical society. If it weren’t
+            for this administrative error, he’d never have discovered the
+            incredible magic underlying his world. But he’ll need the help of
+            Edwin Courcey, his adversarial magical-society counterpart. Thrown
+            together, Robin and Edwin will discover a plot that threatens
+            every magician in the British Isles.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://ik.imagekit.io/panmac/tr:q-75,di-placeholder_portrait_aMjPtD9YZ.jpg,w-350,pr-true,bl/edition/9781529001358.jpg" />
+          <h3 id="ever">The Ever After</h3>
+          <h4>by Amanda Hocking</h4>
+          <p>
+            Ulla Tulin is on a quest to uncover her past in the third fantasy
+            book in Amanda Hocking’s Omte Origins trilogy. In this epic final
+            adventure, Ulla fights to recover her lost memories in time to
+            battle the consequences of opening the bridge to Alfheim, the lost
+            First City. Could her forgotten heritage be the key to victory?
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://ik.imagekit.io/panmac/tr:q-75,di-placeholder_portrait_aMjPtD9YZ.jpg,w-350,pr-true,bl/edition/9781529001327.jpg" />
+          <h3 id="flower">The Morning Flower</h3>
+          <h4>by Amanda Hocking</h4>
+          <p>
+            The Morning Flower is the highly anticipated second novel in
+            Amanda Hocking's fantasy series, the Omte Origins trilogy. As they
+            continue on their quest to find the key to Ulla's heritage, Ulla,
+            Pan and Eliana make an incredible discovery in the city of Merellä
+            and embark on a journey that takes them across the world to an
+            ancient city that may hold the answers they seek. But powerful
+            enemies are close behind – and they're catching up fast.
+          </p>
+          <p>
+            As Eliana faces an impossible choice with far-reaching
+            consequences, Ulla and Pan race to unlock the past and discover an
+            earth-shattering secret that will challenge everything they
+            thought they knew about the troll world. As their enemies draw
+            closer, friendships are pushed to their very limits . . . but will
+            they break?
+          </p>
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="footer-content">
-        <div class="footer-nav">
-          <div class="footer-col">
-            <p>About us</p>
-            <ul>
-              <li>Our company</li>
-              <li>Mission</li>
-              <li>Careers</li>
-              <li>Terms</li>
-              <li>Privacy</li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <p>Contact us</p>
-            <ul>
-              <li>Our company</li>
-              <li>Mission</li>
-              <li>Careers</li>
-              <li>Terms</li>
-              <li>Privacy</li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <p>Support us</p>
-            <ul>
-              <li>Our company</li>
-              <li>Mission</li>
-              <li>Careers</li>
-              <li>Terms</li>
-              <li>Privacy</li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <p>Social media</p>
-            <a href="https://www.facebook.com">
-              <img
-                src="https://s.gr-assets.com/assets/site_footer/footer_facebook-ea4ab848f8e86c5f5c98311bc9495a1b.svg"
-              />
-            </a>
-            <a href="https://www.twitter.com">
-              <img
-                src="https://s.gr-assets.com/assets/site_footer/footer_twitter-126b3ee80481a763f7fccb06ca03053c.svg"
-              />
-            </a>
-            <a href="https://www.instagram.com">
-              <img
-                src="https://s.gr-assets.com/assets/site_footer/footer_instagram-d59e3887020f12bcdb12e6c539579d85.svg"
-              />
-            </a>
-            <a href="https://github.com/zxclinical/final-project">
-              <img src="images/github-mark.svg" />
-            </a>
-          </div>
+  </div>
+  <div class="footer">
+    <div class="footer-content">
+      <div class="footer-nav">
+        <div class="footer-col">
+          <p>About us</p>
+          <ul>
+            <li>Our company</li>
+            <li>Mission</li>
+            <li>Careers</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p>Contact us</p>
+          <ul>
+            <li>Our company</li>
+            <li>Mission</li>
+            <li>Careers</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p>Support us</p>
+          <ul>
+            <li>Our company</li>
+            <li>Mission</li>
+            <li>Careers</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p>Social media</p>
+          <a href="https://www.facebook.com">
+            <img
+              src="https://s.gr-assets.com/assets/site_footer/footer_facebook-ea4ab848f8e86c5f5c98311bc9495a1b.svg" />
+          </a>
+          <a href="https://www.twitter.com">
+            <img src="https://s.gr-assets.com/assets/site_footer/footer_twitter-126b3ee80481a763f7fccb06ca03053c.svg" />
+          </a>
+          <a href="https://www.instagram.com">
+            <img
+              src="https://s.gr-assets.com/assets/site_footer/footer_instagram-d59e3887020f12bcdb12e6c539579d85.svg" />
+          </a>
+          <a href="https://github.com/zxclinical/final-project">
+            <img src="images/github-mark.svg" />
+          </a>
         </div>
       </div>
     </div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
-      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script src="main/app.js"></script>
-  </body>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+    integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="main/app.js"></script>
+</body>
+
 </html>

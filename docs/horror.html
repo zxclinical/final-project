@@ -1,346 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book Library - Home Page</title>
-    <link rel="stylesheet" href="main/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/d99af6f76f.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <ul class="nav-left">
-          <li><a href="#" class="logo">Library</a></li>
-          <li>
-            <div class="dropdown active">
-              <button class="dropbtn" onclick="myFunction()">
-                Books
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content" id="myDropdown">
-                <a href="popular.html">Popular</a>
-                <a href="bestseller.html">Best seller</a>
-                <a href="horror.html">Horror</a>
-                <a href="fantasy.html">Fantasy</a>
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Library - Horror</title>
+  <link rel="stylesheet" href="main/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/d99af6f76f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <a href="#" class="logo">Library</a>
+      <ul>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">
+              Books
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="popular.html">Popular</a>
+              <a href="bestseller.html">Best seller</a>
+              <a href="horror.html">Horror</a>
+              <a href="fantasy.html">Fantasy</a>
             </div>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="contact.html">Contacts</a>
-          </li>
-          <li>
-            <a href="login.html">Login</a>
-          </li>
-          <li>
-            <a href="registration.html">Registration</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <div class="container">
-      <div class="content-section">
-        <div class="content-section-header">
-          <p>Horror</p>
+          </div>
+        </li>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="contact.html">Contacts</a>
+        </li>
+        <li class="guest">
+          <a href="login.html">Login</a>
+        </li>
+        <li class="guest">
+          <a href="registration.html">Registration</a>
+        </li>
+        <li class="admin">
+          <a href="admin.html">Admin Panel</a>
+        </li>
+        <li class="user">
+          <a onclick="logOut();">Sign Out</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="content-section">
+      <div class="content-section-header">
+        <p>Horror</p>
+      </div>
+      <div class="content-books">
+        <div>
+          <img
+            src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1629210121-51n2OJj1-iL._SL500_.jpg?crop=1xw:1xh;center,top&resize=768:*" />
+          <h3 id="reprieve">Reprieve</h3>
+          <h4>by James Han Mattson</h4>
+          <p>
+            It’s April 1997, and four hopeful contestants have made it to the
+            final room of the Quigley House, a “full contact” haunted escape
+            room in Lincoln, Nebraska. If they can endure the home’s six cells
+            of ghoulish horror without shouting “reprieve,” they’ll win a
+            substantial cash prize, but not everyone will make it out alive.
+            When a man breaks into Quigley House and murders one of the
+            contestants, Reprieve sifts through its characters’ back stories
+            and witness statements to solve the crime. Mattson crafts a
+            nail-biting horror saga while also implicating us in our sick
+            obsession with horror. So too does the novel evoke blistering
+            social horror, forcing us to reckon with how racism, prejudice,
+            and complicity are more horrifying—and more fatal—than anything
+            that goes bump in the night. Unrelenting and unforgettable,
+            Reprieve is an American classic in the making.
+          </p>
         </div>
-        <div class="content-books">
-          <div>
-            <img
-              src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1629210121-51n2OJj1-iL._SL500_.jpg?crop=1xw:1xh;center,top&resize=768:*"
-            />
-            <h3 id="reprieve">Reprieve</h3>
-            <h4>by James Han Mattson</h4>
-            <p>
-              It’s April 1997, and four hopeful contestants have made it to the
-              final room of the Quigley House, a “full contact” haunted escape
-              room in Lincoln, Nebraska. If they can endure the home’s six cells
-              of ghoulish horror without shouting “reprieve,” they’ll win a
-              substantial cash prize, but not everyone will make it out alive.
-              When a man breaks into Quigley House and murders one of the
-              contestants, Reprieve sifts through its characters’ back stories
-              and witness statements to solve the crime. Mattson crafts a
-              nail-biting horror saga while also implicating us in our sick
-              obsession with horror. So too does the novel evoke blistering
-              social horror, forcing us to reckon with how racism, prejudice,
-              and complicity are more horrifying—and more fatal—than anything
-              that goes bump in the night. Unrelenting and unforgettable,
-              Reprieve is an American classic in the making.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1634044382-517qIlkJZHL._SL500_.jpg?crop=1xw:1xh;center,top&resize=768:*"
-            />
-            <h3 id="cosmology">A Cosmology of Monsters</h3>
-            <h4>by Shaun Hamill</h4>
-            <p>
-              H.P. Lovecraft meets Stephen King in this spooky debut novel about
-              a family of haunted house proprietors who are terrorized across
-              generations by monsters—and not the hokey jump-scare kind. Hamill
-              has crafted an ambitious, spellbinding horror novel for the ages,
-              one where the looming specters of ambition, obsession, and loss
-              are every bit as terrifying as the flesh-and-blood monsters
-              themselves.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1634044322-0143039989-01-sclzzzzzzz-sx500-1634044291.jpg?crop=1xw:1xh;center,top&resize=768:*"
-            />
-            <h3 id="house">The Haunting of Hill House</h3>
-            <h4>by Shirley Jackson</h4>
-            <p>
-              If you’ve seen the Netflix series of the same name and haven’t
-              read the source material, described by many as the greatest
-              haunted house story ever written, it’s past time to dive into The
-              Haunting of Hill House. In this seminal classic, written by the
-              queen of creep, four seekers arrive at the dilapidated Hill House,
-              where spooky phenomena abound, to participate in a
-              parapsychological study. Jackson’s genius lies in the linkages she
-              makes between haunted houses and haunted minds, which crescendo
-              into an unforgettable ending. Whether you’re a first-time reader
-              or a dyed-in-the-wool Jackson fan, The Haunting of Hill House
-              remains a master class in horror fiction.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1634044565-91v-gekdbal-1634044525.jpg?crop=1xw:1xh;center,top&resize=768:*"
-            />
-            <h3 id="gothic">Mexican Gothic</h3>
-            <h4>by Silvia Moreno-Garcia</h4>
-            <p>
-              Set in Mexico circa the 1950s, Mexican Gothic opens with an
-              alarming letter: newlywed Catalina writes in desperation to her
-              cousin Noemí, claiming that her husband is poisoning her, and that
-              “fleshless things will not let me go.” Glamorous and tough Noemí
-              travels to High Place, the countryside home of Catalina’s new
-              husband, Virgil Doyle, to investigate. There she encounters the
-              “essentially macabre” Doyle family: English aristocrats who
-              colonized the mining town where High Place is situated, and their
-              frightening patriarch, a dastardly eugenicist. Plagued by
-              frightening visions of ghosts and violence, Noemí plots to make
-              her escape with Catalina, but High Place won’t let them go so
-              easily. In this dreadful and spellbinding novel, Moreno-Garcia
-              delivers Gothic horror at its finest, with a brilliant layer about
-              the scourges of racism and colonialism.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1632230874-41CC3AXG7nL._SL500_.jpg?crop=1xw:1xh;center,top&resize=768:*"
-            />
-            <h3 id="frankenstein">Frankenstein</h3>
-            <h4>by Mary Shelley</h4>
-            <p>About three things I was absolutely positive.</p>
-            <p>First, Edward was a vampire.</p>
-            <p>
-              What can be said about Frankenstein that hasn’t been uttered a
-              thousand times over? Shelley’s landmark work of Gothic horror
-              revolutionized our understanding of artificial life, bewitched
-              generations of readers, and pioneered science fiction as we now
-              know it. Whether you’ve read Frankenstein before or you’re picking
-              up the novel for the first time, there’s always something wondrous
-              to discover in this strikingly original story of monstrosity,
-              morality, and destruction.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1626190352-41tQJRAKTwL._SL500_.jpg?crop=1xw:1xh;center,top&resize=768:*"
-            />
-            <h3 id="fledgling">Fledgling</h3>
-            <h4>by Octavia E. Butler</h4>
-            <p>
-              In this mind-bending novel from the always-extraordinary Butler,
-              we meet Shori, an injured young amnesiac who soon awakens to the
-              reality of her identity: she is, in fact, a genetically modified
-              vampire. Unlike her bloodsucking brethren, Shori has dark skin,
-              which enables her to walk in the sunlight. As Shori investigates
-              who she is and who tried to kill her, Butler transcends the
-              vampire genre to ask uncomfortable questions about its mythology.
-              Why must so many vampires be white? Why do we romanticize the
-              violations of consent that vampires commit against their victims?
-              You’ll never read a vampire novel the same way again after
-              digesting Fledgling.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1626189797-41qmMvjVhVL._SL500_.jpg?crop=1xw:1xh;center,top&resize=768:*"
-            />
-            <h3 id="white">White is for Witching</h3>
-            <h4>by Helen Oyeyemi</h4>
-            <p>
-              In a haunted bed and breakfast on the cliffs of England, there
-              lives a teenager named Miranda Silver, who suffers from a
-              hereditary eating disorder that compels her to eat chalk. Along
-              with her widowed father and her twin brother, Miranda operates the
-              bed and breakfast, but this is no ordinary old house: inside these
-              walls live Miranda’s maternal ancestors, a long line of malevolent
-              women who exercise their xenophobia on guests in frightful and
-              fatal ways. When Miranda falls in love with a Black woman, the
-              house goes to violent lengths to end the romance, teeing up a
-              deliciously dark fairy tale about racism, hatred, and grief.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1626719527-41sf8BB2rfL._SL500_.jpg?crop=1xw:1xh;center,top&resize=768:*"
-            />
-            <h3 id="indians">The Only Good Indians</h3>
-            <h4>by Stephen Graham Jones</h4>
-            <p>
-              In this eerie, slow-burning horror novel, four young members of
-              the Blackfeet Nation break with long-held tradition by trespassing
-              on hunting grounds reserved for tribal elders, where they
-              slaughter a herd of elk. A decade later, their hubris comes back
-              to haunt them, with a vengeful spirit hunting them down one by one
-              to exact its gruesome revenge. Gory, haunting, and ultimately
-              hopeful, The Only Good Indians explores what it means to navigate
-              the world as an Indigenous man, where guilt, shame, and grief are
-              part and parcel of life not just for those who leave the
-              reservation, but for those who stay.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1626192089-51TwaSvYL._SL500_.jpg?crop=1xw:1xh;center,top&resize=768:*"
-            />
-            <h3 id="her_body">Her Body and Other Parties</h3>
-            <h4>by Carmen Maria Machado</h4>
-            <p>
-              In this bewitching collection of short stories set at the
-              intersection of fantasy and fabulism, Machado’s enduring subject
-              is the violence visited upon women’s bodies. In “The Husband
-              Stitch,” Machado offers a gruesome reimagining of the familiar
-              fairy tale about a wife who refuses her husband’s pleas to remove
-              a green ribbon from her neck. In “Real Women Have Bodies,” a prom
-              dress shop becomes the site of a horrifying discovery about women
-              who’ve disappeared into the dresses’ seams. Sensual, strange, and
-              disturbing, these bravura stories brew up a provocative potion of
-              horror, fantasy, and science fiction.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1632231557-41h8tLeMLcL._SL500_.jpg?crop=1xw:1xh;center,top&resize=768:*"
-            />
-            <h3 id="it">It</h3>
-            <h4>by Stephen King</h4>
-            <p>
-              To choose the most horrifying among King’s dozens of spooky novels
-              is an impossible task, but here at Esquire, killer clowns won the
-              race. Set in King’s beloved Derry, Maine, It follows the
-              hair-raising adventures of the Losers Club, a self-styled posse of
-              pre-teen misfits who band together to defeat a sadistic killer
-              clown disguised as their worst nightmares. Juxtaposed against this
-              cosmic villainy are myriad human evils, many of which are arguably
-              more insidious than Pennywise: child abuse, sexual predation, and
-              racism, just to name a few. Come for the creature feature that
-              shaped a generation of monstrous clowns to come, but stay for
-              King’s magnum opus of memory, enduring trauma, and the indelible
-              bonds between children.
-            </p>
-          </div>
+        <div>
+          <img
+            src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1634044382-517qIlkJZHL._SL500_.jpg?crop=1xw:1xh;center,top&resize=768:*" />
+          <h3 id="cosmology">A Cosmology of Monsters</h3>
+          <h4>by Shaun Hamill</h4>
+          <p>
+            H.P. Lovecraft meets Stephen King in this spooky debut novel about
+            a family of haunted house proprietors who are terrorized across
+            generations by monsters—and not the hokey jump-scare kind. Hamill
+            has crafted an ambitious, spellbinding horror novel for the ages,
+            one where the looming specters of ambition, obsession, and loss
+            are every bit as terrifying as the flesh-and-blood monsters
+            themselves.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1634044322-0143039989-01-sclzzzzzzz-sx500-1634044291.jpg?crop=1xw:1xh;center,top&resize=768:*" />
+          <h3 id="house">The Haunting of Hill House</h3>
+          <h4>by Shirley Jackson</h4>
+          <p>
+            If you’ve seen the Netflix series of the same name and haven’t
+            read the source material, described by many as the greatest
+            haunted house story ever written, it’s past time to dive into The
+            Haunting of Hill House. In this seminal classic, written by the
+            queen of creep, four seekers arrive at the dilapidated Hill House,
+            where spooky phenomena abound, to participate in a
+            parapsychological study. Jackson’s genius lies in the linkages she
+            makes between haunted houses and haunted minds, which crescendo
+            into an unforgettable ending. Whether you’re a first-time reader
+            or a dyed-in-the-wool Jackson fan, The Haunting of Hill House
+            remains a master class in horror fiction.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1634044565-91v-gekdbal-1634044525.jpg?crop=1xw:1xh;center,top&resize=768:*" />
+          <h3 id="gothic">Mexican Gothic</h3>
+          <h4>by Silvia Moreno-Garcia</h4>
+          <p>
+            Set in Mexico circa the 1950s, Mexican Gothic opens with an
+            alarming letter: newlywed Catalina writes in desperation to her
+            cousin Noemí, claiming that her husband is poisoning her, and that
+            “fleshless things will not let me go.” Glamorous and tough Noemí
+            travels to High Place, the countryside home of Catalina’s new
+            husband, Virgil Doyle, to investigate. There she encounters the
+            “essentially macabre” Doyle family: English aristocrats who
+            colonized the mining town where High Place is situated, and their
+            frightening patriarch, a dastardly eugenicist. Plagued by
+            frightening visions of ghosts and violence, Noemí plots to make
+            her escape with Catalina, but High Place won’t let them go so
+            easily. In this dreadful and spellbinding novel, Moreno-Garcia
+            delivers Gothic horror at its finest, with a brilliant layer about
+            the scourges of racism and colonialism.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1632230874-41CC3AXG7nL._SL500_.jpg?crop=1xw:1xh;center,top&resize=768:*" />
+          <h3 id="frankenstein">Frankenstein</h3>
+          <h4>by Mary Shelley</h4>
+          <p>About three things I was absolutely positive.</p>
+          <p>First, Edward was a vampire.</p>
+          <p>
+            What can be said about Frankenstein that hasn’t been uttered a
+            thousand times over? Shelley’s landmark work of Gothic horror
+            revolutionized our understanding of artificial life, bewitched
+            generations of readers, and pioneered science fiction as we now
+            know it. Whether you’ve read Frankenstein before or you’re picking
+            up the novel for the first time, there’s always something wondrous
+            to discover in this strikingly original story of monstrosity,
+            morality, and destruction.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1626190352-41tQJRAKTwL._SL500_.jpg?crop=1xw:1xh;center,top&resize=768:*" />
+          <h3 id="fledgling">Fledgling</h3>
+          <h4>by Octavia E. Butler</h4>
+          <p>
+            In this mind-bending novel from the always-extraordinary Butler,
+            we meet Shori, an injured young amnesiac who soon awakens to the
+            reality of her identity: she is, in fact, a genetically modified
+            vampire. Unlike her bloodsucking brethren, Shori has dark skin,
+            which enables her to walk in the sunlight. As Shori investigates
+            who she is and who tried to kill her, Butler transcends the
+            vampire genre to ask uncomfortable questions about its mythology.
+            Why must so many vampires be white? Why do we romanticize the
+            violations of consent that vampires commit against their victims?
+            You’ll never read a vampire novel the same way again after
+            digesting Fledgling.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1626189797-41qmMvjVhVL._SL500_.jpg?crop=1xw:1xh;center,top&resize=768:*" />
+          <h3 id="white">White is for Witching</h3>
+          <h4>by Helen Oyeyemi</h4>
+          <p>
+            In a haunted bed and breakfast on the cliffs of England, there
+            lives a teenager named Miranda Silver, who suffers from a
+            hereditary eating disorder that compels her to eat chalk. Along
+            with her widowed father and her twin brother, Miranda operates the
+            bed and breakfast, but this is no ordinary old house: inside these
+            walls live Miranda’s maternal ancestors, a long line of malevolent
+            women who exercise their xenophobia on guests in frightful and
+            fatal ways. When Miranda falls in love with a Black woman, the
+            house goes to violent lengths to end the romance, teeing up a
+            deliciously dark fairy tale about racism, hatred, and grief.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1626719527-41sf8BB2rfL._SL500_.jpg?crop=1xw:1xh;center,top&resize=768:*" />
+          <h3 id="indians">The Only Good Indians</h3>
+          <h4>by Stephen Graham Jones</h4>
+          <p>
+            In this eerie, slow-burning horror novel, four young members of
+            the Blackfeet Nation break with long-held tradition by trespassing
+            on hunting grounds reserved for tribal elders, where they
+            slaughter a herd of elk. A decade later, their hubris comes back
+            to haunt them, with a vengeful spirit hunting them down one by one
+            to exact its gruesome revenge. Gory, haunting, and ultimately
+            hopeful, The Only Good Indians explores what it means to navigate
+            the world as an Indigenous man, where guilt, shame, and grief are
+            part and parcel of life not just for those who leave the
+            reservation, but for those who stay.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1626192089-51TwaSvYL._SL500_.jpg?crop=1xw:1xh;center,top&resize=768:*" />
+          <h3 id="her_body">Her Body and Other Parties</h3>
+          <h4>by Carmen Maria Machado</h4>
+          <p>
+            In this bewitching collection of short stories set at the
+            intersection of fantasy and fabulism, Machado’s enduring subject
+            is the violence visited upon women’s bodies. In “The Husband
+            Stitch,” Machado offers a gruesome reimagining of the familiar
+            fairy tale about a wife who refuses her husband’s pleas to remove
+            a green ribbon from her neck. In “Real Women Have Bodies,” a prom
+            dress shop becomes the site of a horrifying discovery about women
+            who’ve disappeared into the dresses’ seams. Sensual, strange, and
+            disturbing, these bravura stories brew up a provocative potion of
+            horror, fantasy, and science fiction.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1632231557-41h8tLeMLcL._SL500_.jpg?crop=1xw:1xh;center,top&resize=768:*" />
+          <h3 id="it">It</h3>
+          <h4>by Stephen King</h4>
+          <p>
+            To choose the most horrifying among King’s dozens of spooky novels
+            is an impossible task, but here at Esquire, killer clowns won the
+            race. Set in King’s beloved Derry, Maine, It follows the
+            hair-raising adventures of the Losers Club, a self-styled posse of
+            pre-teen misfits who band together to defeat a sadistic killer
+            clown disguised as their worst nightmares. Juxtaposed against this
+            cosmic villainy are myriad human evils, many of which are arguably
+            more insidious than Pennywise: child abuse, sexual predation, and
+            racism, just to name a few. Come for the creature feature that
+            shaped a generation of monstrous clowns to come, but stay for
+            King’s magnum opus of memory, enduring trauma, and the indelible
+            bonds between children.
+          </p>
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="footer-content">
-        <div class="footer-nav">
-          <div class="footer-col">
-            <p>About us</p>
-            <ul>
-              <li>Our company</li>
-              <li>Mission</li>
-              <li>Careers</li>
-              <li>Terms</li>
-              <li>Privacy</li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <p>Contact us</p>
-            <ul>
-              <li>Our company</li>
-              <li>Mission</li>
-              <li>Careers</li>
-              <li>Terms</li>
-              <li>Privacy</li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <p>Support us</p>
-            <ul>
-              <li>Our company</li>
-              <li>Mission</li>
-              <li>Careers</li>
-              <li>Terms</li>
-              <li>Privacy</li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <p>Social media</p>
-            <a href="https://www.facebook.com">
-              <img
-                src="https://s.gr-assets.com/assets/site_footer/footer_facebook-ea4ab848f8e86c5f5c98311bc9495a1b.svg"
-              />
-            </a>
-            <a href="https://www.twitter.com">
-              <img
-                src="https://s.gr-assets.com/assets/site_footer/footer_twitter-126b3ee80481a763f7fccb06ca03053c.svg"
-              />
-            </a>
-            <a href="https://www.instagram.com">
-              <img
-                src="https://s.gr-assets.com/assets/site_footer/footer_instagram-d59e3887020f12bcdb12e6c539579d85.svg"
-              />
-            </a>
-            <a href="https://github.com/zxclinical/final-project">
-              <img src="images/github-mark.svg" />
-            </a>
-          </div>
+  </div>
+  <div class="footer">
+    <div class="footer-content">
+      <div class="footer-nav">
+        <div class="footer-col">
+          <p>About us</p>
+          <ul>
+            <li>Our company</li>
+            <li>Mission</li>
+            <li>Careers</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p>Contact us</p>
+          <ul>
+            <li>Our company</li>
+            <li>Mission</li>
+            <li>Careers</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p>Support us</p>
+          <ul>
+            <li>Our company</li>
+            <li>Mission</li>
+            <li>Careers</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p>Social media</p>
+          <a href="https://www.facebook.com">
+            <img
+              src="https://s.gr-assets.com/assets/site_footer/footer_facebook-ea4ab848f8e86c5f5c98311bc9495a1b.svg" />
+          </a>
+          <a href="https://www.twitter.com">
+            <img src="https://s.gr-assets.com/assets/site_footer/footer_twitter-126b3ee80481a763f7fccb06ca03053c.svg" />
+          </a>
+          <a href="https://www.instagram.com">
+            <img
+              src="https://s.gr-assets.com/assets/site_footer/footer_instagram-d59e3887020f12bcdb12e6c539579d85.svg" />
+          </a>
+          <a href="https://github.com/zxclinical/final-project">
+            <img src="images/github-mark.svg" />
+          </a>
         </div>
       </div>
     </div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
-      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script src="main/app.js"></script>
-  </body>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+    integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="main/app.js"></script>
+</body>
+
 </html>

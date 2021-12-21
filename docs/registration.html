@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Library - Home Page</title>
+    <title>Book Library - Registation</title>
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -20,12 +20,26 @@
 <body>
     <header>
         <nav>
-            <input type="checkbox" id="check">
+            <input type="checkbox" id="check" />
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
             <a href="#" class="logo">Library</a>
             <ul>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="myFunction()">
+                            Books
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a href="popular.html">Popular</a>
+                            <a href="bestseller.html">Best seller</a>
+                            <a href="horror.html">Horror</a>
+                            <a href="fantasy.html">Fantasy</a>
+                        </div>
+                    </div>
+                </li>
                 <li>
                     <a href="index.html">Home</a>
                 </li>
@@ -35,11 +49,17 @@
                 <li>
                     <a href="contact.html">Contacts</a>
                 </li>
-                <li>
+                <li class="guest">
                     <a href="login.html">Login</a>
                 </li>
-                <li>
-                    <a class="active" href="registration.html">Registration</a>
+                <li class="guest">
+                    <a href="registration.html">Registration</a>
+                </li>
+                <li class="admin">
+                    <a href="admin.html">Admin Panel</a>
+                </li>
+                <li class="user">
+                    <a onclick="logOut();">Sign Out</a>
                 </li>
             </ul>
         </nav>
@@ -95,6 +115,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="main/animation.js"></script>
     <script src="main/signup.js"></script>
+    <script src="main/app.js"></script>
 </body>
 
 </html>

@@ -1,558 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book Library - Home Page</title>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon-16x16.png"
-    />
-    <link rel="stylesheet" href="main/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/d99af6f76f.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <ul class="nav-left">
-          <li><a href="#" class="logo">Library</a></li>
-          <li>
-            <div class="dropdown active">
-              <button class="dropbtn" onclick="myFunction()">
-                Books
-                <i class="fa fa-caret-down"></i>
-              </button>
-              <div class="dropdown-content" id="myDropdown">
-                <a href="popular.html">Popular</a>
-                <a href="bestseller.html">Best seller</a>
-                <a href="horror.html">Horror</a>
-                <a href="fantasy.html">Fantasy</a>
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Library - Popular</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+  <link rel="stylesheet" href="main/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/d99af6f76f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <a href="#" class="logo">Library</a>
+      <ul>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">
+              Books
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="popular.html">Popular</a>
+              <a href="bestseller.html">Best seller</a>
+              <a href="horror.html">Horror</a>
+              <a href="fantasy.html">Fantasy</a>
             </div>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="contact.html">Contacts</a>
-          </li>
-          <li>
-            <a href="login.html">Login</a>
-          </li>
-          <li>
-            <a href="registration.html">Registration</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <div class="container">
-      <div class="content-section">
-        <div class="content-section-header">
-          <p>Popular In 2021</p>
+          </div>
+        </li>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="contact.html">Contacts</a>
+        </li>
+        <li class="guest">
+          <a href="login.html">Login</a>
+        </li>
+        <li class="guest">
+          <a href="registration.html">Registration</a>
+        </li>
+        <li class="admin">
+          <a href="admin.html">Admin Panel</a>
+        </li>
+        <li class="user">
+          <a onclick="logOut();">Sign Out</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="content-section">
+      <div class="content-section-header">
+        <p>Popular In 2021</p>
+      </div>
+      <div class="content-books">
+        <div>
+          <img src="https://storage.googleapis.com/du-prd/books/images/9780385546027.jpg" />
+          <h3 id="judge">The Judge's List</h3>
+          <h4>by John Grisham</h4>
+          <p>
+            In The Whistler, Lacy Stoltz investigated a corrupt judge who was
+            taking millions in bribes from a crime syndicate. She put the
+            criminals away, but only after being attacked and nearly killed.
+            Three years later, and approaching forty, she is tired of her work
+            for the Florida Board on Judicial Conduct and ready for a change.
+          </p>
+          <p>
+            Then she meets a mysterious woman who is so frightened she uses a
+            number of aliases. Jeri Crosby’s father was murdered twenty years
+            earlier in a case that remains unsolved and that has grown stone
+            cold. But Jeri has a suspect whom she has become obsessed with and
+            has stalked for two decades. Along the way, she has discovered
+            other victims.
+          </p>
+          <p>
+            Suspicions are easy enough, but proof seems impossible. The man is
+            brilliant, patient, and always one step ahead of law enforcement.
+            He is the most cunning of all serial killers. He knows forensics,
+            police procedure, and most important: he knows the law.
+          </p>
+          <p>He is a judge, in Florida—under Lacy’s jurisdiction.</p>
         </div>
-        <div class="content-books">
-          <div>
-            <img
-              src="https://storage.googleapis.com/du-prd/books/images/9780385546027.jpg"
-            />
-            <h3 id="judge">The Judge's List</h3>
-            <h4>by John Grisham</h4>
-            <p>
-              In The Whistler, Lacy Stoltz investigated a corrupt judge who was
-              taking millions in bribes from a crime syndicate. She put the
-              criminals away, but only after being attacked and nearly killed.
-              Three years later, and approaching forty, she is tired of her work
-              for the Florida Board on Judicial Conduct and ready for a change.
-            </p>
-            <p>
-              Then she meets a mysterious woman who is so frightened she uses a
-              number of aliases. Jeri Crosby’s father was murdered twenty years
-              earlier in a case that remains unsolved and that has grown stone
-              cold. But Jeri has a suspect whom she has become obsessed with and
-              has stalked for two decades. Along the way, she has discovered
-              other victims.
-            </p>
-            <p>
-              Suspicions are easy enough, but proof seems impossible. The man is
-              brilliant, patient, and always one step ahead of law enforcement.
-              He is the most cunning of all serial killers. He knows forensics,
-              police procedure, and most important: he knows the law.
-            </p>
-            <p>He is a judge, in Florida—under Lacy’s jurisdiction.</p>
-          </div>
-          <div>
-            <img
-              src="https://storage.googleapis.com/du-prd/books/images/9781101885680.jpg"
-            />
-            <h3 id="bees">Go Tell The Bees That I Am Gone</h3>
-            <h4>by Diana Gabaldon</h4>
-            <p>
-              Jamie Fraser and Claire Randall were torn apart by the Jacobite
-              Rising in 1746, and it took them twenty years to find each other
-              again. Now the American Revolution threatens to do the same. It is
-              1779 and Claire and Jamie are at last reunited with their
-              daughter, Brianna, her husband, Roger, and their children on
-              Fraser’s Ridge. Having the family together is a dream the Frasers
-              had thought impossible.
-            </p>
-            <p>
-              Yet even in the North Carolina backcountry, the effects of war are
-              being felt. Tensions in the Colonies are great and local feelings
-              run hot enough to boil Hell’s teakettle. Jamie knows loyalties
-              among his tenants are split and it won’t be long until the war is
-              on his doorstep. Brianna and Roger have their own worry: that the
-              dangers that provoked their escape from the twentieth century
-              might catch up to them. Sometimes they question whether risking
-              the perils of the 1700s—among them disease, starvation, and an
-              impending war—was indeed the safer choice for their family.
-            </p>
-            <p>
-              Not so far away, young William Ransom is still coming to terms
-              with the discovery of his true father’s identity—and thus his
-              own—and Lord John Grey has reconciliations to make, and dangers to
-              meet . . . on his son’s behalf, and his own. Meanwhile, the
-              Revolutionary War creeps ever closer to Fraser’s Ridge. And with
-              the family finally together, Jamie and Claire have more at stake
-              than ever before.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://storage.googleapis.com/du-prd/books/images/9781984818416.jpg"
-            />
-            <h3 id="wish">Wish You Were Here</h3>
-            <h4>by Jodi Picoult</h4>
-            <p>
-              Diana O’Toole is perfectly on track. She will be married by
-              thirty, done having kids by thirty-five, and move out to the New
-              York City suburbs, all while climbing the professional ladder in
-              the cutthroat art auction world. She’s an associate specialist at
-              Sotheby’s now, but her boss has hinted at a promotion if she can
-              close a deal with a high-profile client. She’s not engaged just
-              yet, but she knows her boyfriend, Finn, a surgical resident, is
-              about to propose on their romantic getaway to the Galápagos—days
-              before her thirtieth birthday. Right on time.
-            </p>
-            <p>
-              But then a virus that felt worlds away has appeared in the city,
-              and on the eve of their departure, Finn breaks the news: It’s all
-              hands on deck at the hospital. He has to stay behind. You should
-              still go, he assures her, since it would be a shame for all of
-              their nonrefundable trip to go to waste. And so, reluctantly, she
-              goes.
-            </p>
-            <p>
-              Almost immediately, Diana’s dream vacation goes awry. Her luggage
-              is lost, the Wi-Fi is nearly nonexistent, and the hotel they’d
-              booked is shut down due to the pandemic. In fact, the whole island
-              is now under quarantine, and she is stranded until the borders
-              reopen. Completely isolated, she must venture beyond her comfort
-              zone. Slowly, she carves out a connection with a local family when
-              a teenager with a secret opens up to Diana, despite her father’s
-              suspicion of outsiders.
-            </p>
-            <p>
-              In the Galápagos Islands, where Darwin’s theory of evolution by
-              natural selection was formed, Diana finds herself examining her
-              relationships, her choices, and herself—and wondering if when she
-              goes home, she too will have evolved into someone completely
-              different.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://storage.googleapis.com/du-prd/books/images/9780063076099.jpg"
-            />
-            <h3 id="storyteller">The Storyteller</h3>
-            <h4>by Dave Grohl</h4>
-            <p>
-              Having entertained the idea for years, and even offered a few
-              questionable opportunities ("It's a piece of cake! Just do 4 hours
-              of interviews, find someone else to write it, put your face on the
-              cover, and voila!") I have decided to write these stories just as
-              I have always done, in my own hand. The joy that I have felt from
-              chronicling these tales is not unlike listening back to a song
-              that I've recorded and can't wait to share with the world, or
-              reading a primitive journal entry from a stained notebook, or even
-              hearing my voice bounce between the Kiss posters on my wall as a
-              child.
-            </p>
-            <p>
-              This certainly doesn't mean that I'm quitting my day job, but it
-              does give me a place to shed a little light on what it's like to
-              be a kid from Springfield, Virginia, walking through life while
-              living out the crazy dreams I had as young musician. From hitting
-              the road with Scream at 18 years old, to my time in Nirvana and
-              the Foo Fighters, jamming with Iggy Pop or playing at the Academy
-              Awards or dancing with AC/DC and the Preservation Hall Jazz Band,
-              drumming for Tom Petty or meeting Sir Paul McCartney at Royal
-              Albert Hall, bedtime stories with Joan Jett or a chance meeting
-              with Little Richard, to flying halfway around the world for one
-              epic night with my daughters…the list goes on. I look forward to
-              focusing the lens through which I see these memories a little
-              sharper for you with much excitement.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://storage.googleapis.com/du-prd/books/images/9781984877925.jpg"
-            />
-            <h3 id="will">Will</h3>
-            <h4>by Will Smith</h4>
-            <p>About three things I was absolutely positive.</p>
-            <p>First, Edward was a vampire.</p>
-            <p>
-              Will Smith’s transformation from a West Philadelphia kid to one of
-              the biggest rap stars of his era, and then one of the biggest
-              movie stars in Hollywood history, is an epic tale—but it’s only
-              half the story.
-            </p>
-            <p>
-              Will Smith thought, with good reason, that he had won at life: not
-              only was his own success unparalleled, his whole family was at the
-              pinnacle of the entertainment world. Only they didn't see it that
-              way: they felt more like star performers in his circus, a
-              seven-days-a-week job they hadn't signed up for. It turned out
-              Will Smith's education wasn't nearly over.
-            </p>
-            <p>
-              This memoir is the product of a profound journey of
-              self-knowledge, a reckoning with all that your will can get you
-              and all that it can leave behind. Written with the help of Mark
-              Manson, author of the multi-million-copy bestseller The Subtle Art
-              of Not Giving a F*ck, Will is the story of how one person mastered
-              his own emotions, written in a way that can help everyone else do
-              the same. Few of us will know the pressure of performing on the
-              world's biggest stages for the highest of stakes, but we can all
-              understand that the fuel that works for one stage of our journey
-              might have to be changed if we want to make it all the way home.
-              The combination of genuine wisdom of universal value and a life
-              story that is preposterously entertaining, even astonishing, puts
-              Will the book, like its author, in a category by itself.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://storage.googleapis.com/du-prd/books/images/9780735222359.jpg"
-            />
-            <h3 id="lincoln">The Lincoln Highway</h3>
-            <h4>by Amor Towles</h4>
-            <p>
-              In June, 1954, eighteen-year-old Emmett Watson is driven home to
-              Nebraska by the warden of the juvenile work farm where he has just
-              served fifteen months for involuntary manslaughter. His mother
-              long gone, his father recently deceased, and the family farm
-              foreclosed upon by the bank, Emmett's intention is to pick up his
-              eight-year-old brother, Billy, and head to California where they
-              can start their lives anew. But when the warden drives away,
-              Emmett discovers that two friends from the work farm have hidden
-              themselves in the trunk of the warden's car. Together, they have
-              hatched an altogether different plan for Emmett's future, one that
-              will take them all on a fateful journey in the opposite
-              direction—to the City of New York.
-            </p>
-            <p>
-              Spanning just ten days and told from multiple points of view,
-              Towles's third novel will satisfy fans of his multi-layered
-              literary styling while providing them an array of new and richly
-              imagined settings, characters, and themes.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://storage.googleapis.com/du-prd/books/images/9780062888341.jpg"
-            />
-            <h3 id="stanger">The Stanger In The Lifeboat</h3>
-            <h4>by Mitch Albom</h4>
-            <p>
-              While in Paris, Harvard symbologist Robert Langdon is awakened by
-              a phone call in the dead of the night. The elderly curator of the
-              Louvre has been murdered inside the museum, his body covered in
-              baffling symbols. As Langdon and gifted French cryptologist Sophie
-              Neveu sort through the bizarre riddles, they are stunned to
-              discover a trail of clues hidden in the works of Leonardo da
-              Vinci—clues visible for all to see and yet ingeniously disguised
-              by the painter.
-            </p>
-            <p>
-              Even more startling, the late curator was involved in the Priory
-              of Sion—a secret society whose members included Sir Isaac Newton,
-              Victor Hugo, and Da Vinci—and he guarded a breathtaking historical
-              secret. Unless Langdon and Neveu can decipher the labyrinthine
-              puzzle—while avoiding the faceless adversary who shadows their
-              every move—the explosive, ancient truth will be lost forever.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://storage.googleapis.com/du-prd/books/images/9780593465066.jpg"
-            />
-            <h3 id="call_us">Call Us What We Carry</h3>
-            <h4>by Amanda Gorman</h4>
-            <p>
-              Formerly titled The Hill We Climb and Other Poems, the luminous
-              poetry collection by #1 New York Times bestselling author and
-              presidential inaugural poet Amanda Gorman captures a shipwrecked
-              moment in time and transforms it into a lyric of hope and healing.
-              In Call Us What We Carry, Gorman explores history, language,
-              identity, and erasure through an imaginative and intimate collage.
-              Harnessing the collective grief of a global pandemic, this
-              beautifully designed volume features poems in many inventive
-              styles and structures and shines a light on a moment of reckoning.
-              Call Us What We Carry reveals that Gorman has become our messenger
-              from the past, our voice for the future.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://storage.googleapis.com/du-prd/books/images/9780593230572.jpg"
-            />
-            <h3 id="1916">The 1916 Project</h3>
-            <h4>by Nikole Hannah-Jones</h4>
-            <p>
-              In late August 1619, a ship arrived in the British colony of
-              Virginia bearing a cargo of twenty to thirty enslaved people from
-              Africa. Their arrival led to the barbaric and unprecedented system
-              of American chattel slavery that would last for the next 250
-              years. This is sometimes referred to as the country’s original
-              sin, but it is more than that: It is the source of so much that
-              still defines the United States.
-            </p>
-            <p>
-              The New York Times Magazine’s award-winning “1619 Project” issue
-              reframed our understanding of American history by placing slavery
-              and its continuing legacy at the center of our national narrative.
-              This new book substantially expands on that work, weaving together
-              eighteen essays that explore the legacy of slavery in present-day
-              America with thirty-six poems and works of fiction that illuminate
-              key moments of oppression, struggle, and resistance. The essays
-              show how the inheritance of 1619 reaches into every part of
-              contemporary American society, from politics, music, diet,
-              traffic, and citizenship to capitalism, religion, and our
-              democracy itself.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://storage.googleapis.com/du-prd/books/images/9781501110375.jpg"
-            />
-            <h3 id="it_ends">It Ends With Us</h3>
-            <h4>by Colleen Hoover</h4>
-            <p>
-              Lily hasn’t always had it easy, but that’s never stopped her from
-              working hard for the life she wants. She’s come a long way from
-              the small town where she grew up—she graduated from college, moved
-              to Boston, and started her own business. And when she feels a
-              spark with a gorgeous neurosurgeon named Ryle Kincaid, everything
-              in Lily’s life seems too good to be true.
-            </p>
-            <p>
-              Ryle is assertive, stubborn, maybe even a little arrogant. He’s
-              also sensitive, brilliant, and has a total soft spot for Lily. And
-              the way he looks in scrubs certainly doesn’t hurt. Lily can’t get
-              him out of her head. But Ryle’s complete aversion to relationships
-              is disturbing. Even as Lily finds herself becoming the exception
-              to his “no dating” rule, she can’t help but wonder what made him
-              that way in the first place.
-            </p>
-            <p>
-              As questions about her new relationship overwhelm her, so do
-              thoughts of Atlas Corrigan—her first love and a link to the past
-              she left behind. He was her kindred spirit, her protector. When
-              Atlas suddenly reappears, everything Lily has built with Ryle is
-              threatened.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://storage.googleapis.com/du-prd/books/images/9781501161933.jpg"
-            />
-            <h3 id="evelyn">The Seven Husbands Of Evelyn Hugo</h3>
-            <h4>by Taylor Jenkins Reid</h4>
-            <p>
-              Aging and reclusive Hollywood movie icon Evelyn Hugo is finally
-              ready to tell the truth about her glamorous and scandalous life.
-              But when she chooses unknown magazine reporter Monique Grant for
-              the job, no one is more astounded than Monique herself. Why her?
-              Why now?
-            </p>
-            <p>
-              Monique is not exactly on top of the world. Her husband has left
-              her, and her professional life is going nowhere. Regardless of why
-              Evelyn has selected her to write her biography, Monique is
-              determined to use this opportunity to jumpstart her career.
-            </p>
-            <p>
-              Summoned to Evelyn’s luxurious apartment, Monique listens in
-              fascination as the actress tells her story. From making her way to
-              Los Angeles in the 1950s to her decision to leave show business in
-              the ‘80s, and, of course, the seven husbands along the way, Evelyn
-              unspools a tale of ruthless ambition, unexpected friendship, and a
-              great forbidden love. Monique begins to feel a very real
-              connection to the legendary star, but as Evelyn’s story near its
-              conclusion, it becomes clear that her life intersects with
-              Monique’s own in tragic and irreversible ways.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://storage.googleapis.com/du-prd/books/images/9781791392796.jpg"
-            />
-            <h3 id="verity">Verity</h3>
-            <h4>by Colleen Hoover</h4>
-            <p>
-              Lowen Ashleigh is a struggling writer on the brink of financial
-              ruin when she accepts the job offer of a lifetime. Jeremy
-              Crawford, husband of bestselling author Verity Crawford, has hired
-              Lowen to complete the remaining books in a successful series his
-              injured wife is unable to finish.
-            </p>
-            <p>
-              Lowen arrives at the Crawford home, ready to sort through years of
-              Verity’s notes and outlines, hoping to find enough material to get
-              her started. What Lowen doesn’t expect to uncover in the chaotic
-              office is an unfinished autobiography Verity never intended for
-              anyone to read. Page after page of bone-chilling admissions,
-              including Verity's recollection of the night her family was
-              forever altered.
-            </p>
-            <p>
-              Lowen decides to keep the manuscript hidden from Jeremy, knowing
-              its contents could devastate the already grieving father. But as
-              Lowen’s feelings for Jeremy begin to intensify, she recognizes all
-              the ways she could benefit if he were to read his wife’s words.
-              After all, no matter how devoted Jeremy is to his injured wife, a
-              truth this horrifying would make it impossible for him to continue
-              loving her.
-            </p>
-          </div>
-          <div>
-            <img
-              src="https://storage.googleapis.com/du-prd/books/images/9780062060624.jpg"
-            />
-            <h3 id="achilles">The Song Of Achilles</h3>
-            <h4>by Madeline Miller</h4>
-            <p>
-              A tale of gods, kings, immortal fame, and the human heart, The
-              Song of Achilles is a dazzling literary feat that brilliantly
-              reimagines Homer’s enduring masterwork, The Iliad. An
-              action-packed adventure, an epic love story, a marvelously
-              conceived and executed page-turner, Miller’s monumental debut
-              novel has already earned resounding acclaim from some of
-              contemporary fiction’s brightest lights—and fans of Mary Renault,
-              Bernard Cornwell, Steven Pressfield, and Colleen McCullough’s
-              Masters of Rome series will delight in this unforgettable journey
-              back to ancient Greece in the Age of Heroes.
-            </p>
-          </div>
+        <div>
+          <img src="https://storage.googleapis.com/du-prd/books/images/9781101885680.jpg" />
+          <h3 id="bees">Go Tell The Bees That I Am Gone</h3>
+          <h4>by Diana Gabaldon</h4>
+          <p>
+            Jamie Fraser and Claire Randall were torn apart by the Jacobite
+            Rising in 1746, and it took them twenty years to find each other
+            again. Now the American Revolution threatens to do the same. It is
+            1779 and Claire and Jamie are at last reunited with their
+            daughter, Brianna, her husband, Roger, and their children on
+            Fraser’s Ridge. Having the family together is a dream the Frasers
+            had thought impossible.
+          </p>
+          <p>
+            Yet even in the North Carolina backcountry, the effects of war are
+            being felt. Tensions in the Colonies are great and local feelings
+            run hot enough to boil Hell’s teakettle. Jamie knows loyalties
+            among his tenants are split and it won’t be long until the war is
+            on his doorstep. Brianna and Roger have their own worry: that the
+            dangers that provoked their escape from the twentieth century
+            might catch up to them. Sometimes they question whether risking
+            the perils of the 1700s—among them disease, starvation, and an
+            impending war—was indeed the safer choice for their family.
+          </p>
+          <p>
+            Not so far away, young William Ransom is still coming to terms
+            with the discovery of his true father’s identity—and thus his
+            own—and Lord John Grey has reconciliations to make, and dangers to
+            meet . . . on his son’s behalf, and his own. Meanwhile, the
+            Revolutionary War creeps ever closer to Fraser’s Ridge. And with
+            the family finally together, Jamie and Claire have more at stake
+            than ever before.
+          </p>
+        </div>
+        <div>
+          <img src="https://storage.googleapis.com/du-prd/books/images/9781984818416.jpg" />
+          <h3 id="wish">Wish You Were Here</h3>
+          <h4>by Jodi Picoult</h4>
+          <p>
+            Diana O’Toole is perfectly on track. She will be married by
+            thirty, done having kids by thirty-five, and move out to the New
+            York City suburbs, all while climbing the professional ladder in
+            the cutthroat art auction world. She’s an associate specialist at
+            Sotheby’s now, but her boss has hinted at a promotion if she can
+            close a deal with a high-profile client. She’s not engaged just
+            yet, but she knows her boyfriend, Finn, a surgical resident, is
+            about to propose on their romantic getaway to the Galápagos—days
+            before her thirtieth birthday. Right on time.
+          </p>
+          <p>
+            But then a virus that felt worlds away has appeared in the city,
+            and on the eve of their departure, Finn breaks the news: It’s all
+            hands on deck at the hospital. He has to stay behind. You should
+            still go, he assures her, since it would be a shame for all of
+            their nonrefundable trip to go to waste. And so, reluctantly, she
+            goes.
+          </p>
+          <p>
+            Almost immediately, Diana’s dream vacation goes awry. Her luggage
+            is lost, the Wi-Fi is nearly nonexistent, and the hotel they’d
+            booked is shut down due to the pandemic. In fact, the whole island
+            is now under quarantine, and she is stranded until the borders
+            reopen. Completely isolated, she must venture beyond her comfort
+            zone. Slowly, she carves out a connection with a local family when
+            a teenager with a secret opens up to Diana, despite her father’s
+            suspicion of outsiders.
+          </p>
+          <p>
+            In the Galápagos Islands, where Darwin’s theory of evolution by
+            natural selection was formed, Diana finds herself examining her
+            relationships, her choices, and herself—and wondering if when she
+            goes home, she too will have evolved into someone completely
+            different.
+          </p>
+        </div>
+        <div>
+          <img src="https://storage.googleapis.com/du-prd/books/images/9780063076099.jpg" />
+          <h3 id="storyteller">The Storyteller</h3>
+          <h4>by Dave Grohl</h4>
+          <p>
+            Having entertained the idea for years, and even offered a few
+            questionable opportunities ("It's a piece of cake! Just do 4 hours
+            of interviews, find someone else to write it, put your face on the
+            cover, and voila!") I have decided to write these stories just as
+            I have always done, in my own hand. The joy that I have felt from
+            chronicling these tales is not unlike listening back to a song
+            that I've recorded and can't wait to share with the world, or
+            reading a primitive journal entry from a stained notebook, or even
+            hearing my voice bounce between the Kiss posters on my wall as a
+            child.
+          </p>
+          <p>
+            This certainly doesn't mean that I'm quitting my day job, but it
+            does give me a place to shed a little light on what it's like to
+            be a kid from Springfield, Virginia, walking through life while
+            living out the crazy dreams I had as young musician. From hitting
+            the road with Scream at 18 years old, to my time in Nirvana and
+            the Foo Fighters, jamming with Iggy Pop or playing at the Academy
+            Awards or dancing with AC/DC and the Preservation Hall Jazz Band,
+            drumming for Tom Petty or meeting Sir Paul McCartney at Royal
+            Albert Hall, bedtime stories with Joan Jett or a chance meeting
+            with Little Richard, to flying halfway around the world for one
+            epic night with my daughters…the list goes on. I look forward to
+            focusing the lens through which I see these memories a little
+            sharper for you with much excitement.
+          </p>
+        </div>
+        <div>
+          <img src="https://storage.googleapis.com/du-prd/books/images/9781984877925.jpg" />
+          <h3 id="will">Will</h3>
+          <h4>by Will Smith</h4>
+          <p>About three things I was absolutely positive.</p>
+          <p>First, Edward was a vampire.</p>
+          <p>
+            Will Smith’s transformation from a West Philadelphia kid to one of
+            the biggest rap stars of his era, and then one of the biggest
+            movie stars in Hollywood history, is an epic tale—but it’s only
+            half the story.
+          </p>
+          <p>
+            Will Smith thought, with good reason, that he had won at life: not
+            only was his own success unparalleled, his whole family was at the
+            pinnacle of the entertainment world. Only they didn't see it that
+            way: they felt more like star performers in his circus, a
+            seven-days-a-week job they hadn't signed up for. It turned out
+            Will Smith's education wasn't nearly over.
+          </p>
+          <p>
+            This memoir is the product of a profound journey of
+            self-knowledge, a reckoning with all that your will can get you
+            and all that it can leave behind. Written with the help of Mark
+            Manson, author of the multi-million-copy bestseller The Subtle Art
+            of Not Giving a F*ck, Will is the story of how one person mastered
+            his own emotions, written in a way that can help everyone else do
+            the same. Few of us will know the pressure of performing on the
+            world's biggest stages for the highest of stakes, but we can all
+            understand that the fuel that works for one stage of our journey
+            might have to be changed if we want to make it all the way home.
+            The combination of genuine wisdom of universal value and a life
+            story that is preposterously entertaining, even astonishing, puts
+            Will the book, like its author, in a category by itself.
+          </p>
+        </div>
+        <div>
+          <img src="https://storage.googleapis.com/du-prd/books/images/9780735222359.jpg" />
+          <h3 id="lincoln">The Lincoln Highway</h3>
+          <h4>by Amor Towles</h4>
+          <p>
+            In June, 1954, eighteen-year-old Emmett Watson is driven home to
+            Nebraska by the warden of the juvenile work farm where he has just
+            served fifteen months for involuntary manslaughter. His mother
+            long gone, his father recently deceased, and the family farm
+            foreclosed upon by the bank, Emmett's intention is to pick up his
+            eight-year-old brother, Billy, and head to California where they
+            can start their lives anew. But when the warden drives away,
+            Emmett discovers that two friends from the work farm have hidden
+            themselves in the trunk of the warden's car. Together, they have
+            hatched an altogether different plan for Emmett's future, one that
+            will take them all on a fateful journey in the opposite
+            direction—to the City of New York.
+          </p>
+          <p>
+            Spanning just ten days and told from multiple points of view,
+            Towles's third novel will satisfy fans of his multi-layered
+            literary styling while providing them an array of new and richly
+            imagined settings, characters, and themes.
+          </p>
+        </div>
+        <div>
+          <img src="https://storage.googleapis.com/du-prd/books/images/9780062888341.jpg" />
+          <h3 id="stanger">The Stanger In The Lifeboat</h3>
+          <h4>by Mitch Albom</h4>
+          <p>
+            While in Paris, Harvard symbologist Robert Langdon is awakened by
+            a phone call in the dead of the night. The elderly curator of the
+            Louvre has been murdered inside the museum, his body covered in
+            baffling symbols. As Langdon and gifted French cryptologist Sophie
+            Neveu sort through the bizarre riddles, they are stunned to
+            discover a trail of clues hidden in the works of Leonardo da
+            Vinci—clues visible for all to see and yet ingeniously disguised
+            by the painter.
+          </p>
+          <p>
+            Even more startling, the late curator was involved in the Priory
+            of Sion—a secret society whose members included Sir Isaac Newton,
+            Victor Hugo, and Da Vinci—and he guarded a breathtaking historical
+            secret. Unless Langdon and Neveu can decipher the labyrinthine
+            puzzle—while avoiding the faceless adversary who shadows their
+            every move—the explosive, ancient truth will be lost forever.
+          </p>
+        </div>
+        <div>
+          <img src="https://storage.googleapis.com/du-prd/books/images/9780593465066.jpg" />
+          <h3 id="call_us">Call Us What We Carry</h3>
+          <h4>by Amanda Gorman</h4>
+          <p>
+            Formerly titled The Hill We Climb and Other Poems, the luminous
+            poetry collection by #1 New York Times bestselling author and
+            presidential inaugural poet Amanda Gorman captures a shipwrecked
+            moment in time and transforms it into a lyric of hope and healing.
+            In Call Us What We Carry, Gorman explores history, language,
+            identity, and erasure through an imaginative and intimate collage.
+            Harnessing the collective grief of a global pandemic, this
+            beautifully designed volume features poems in many inventive
+            styles and structures and shines a light on a moment of reckoning.
+            Call Us What We Carry reveals that Gorman has become our messenger
+            from the past, our voice for the future.
+          </p>
+        </div>
+        <div>
+          <img src="https://storage.googleapis.com/du-prd/books/images/9780593230572.jpg" />
+          <h3 id="1916">The 1916 Project</h3>
+          <h4>by Nikole Hannah-Jones</h4>
+          <p>
+            In late August 1619, a ship arrived in the British colony of
+            Virginia bearing a cargo of twenty to thirty enslaved people from
+            Africa. Their arrival led to the barbaric and unprecedented system
+            of American chattel slavery that would last for the next 250
+            years. This is sometimes referred to as the country’s original
+            sin, but it is more than that: It is the source of so much that
+            still defines the United States.
+          </p>
+          <p>
+            The New York Times Magazine’s award-winning “1619 Project” issue
+            reframed our understanding of American history by placing slavery
+            and its continuing legacy at the center of our national narrative.
+            This new book substantially expands on that work, weaving together
+            eighteen essays that explore the legacy of slavery in present-day
+            America with thirty-six poems and works of fiction that illuminate
+            key moments of oppression, struggle, and resistance. The essays
+            show how the inheritance of 1619 reaches into every part of
+            contemporary American society, from politics, music, diet,
+            traffic, and citizenship to capitalism, religion, and our
+            democracy itself.
+          </p>
+        </div>
+        <div>
+          <img src="https://storage.googleapis.com/du-prd/books/images/9781501110375.jpg" />
+          <h3 id="it_ends">It Ends With Us</h3>
+          <h4>by Colleen Hoover</h4>
+          <p>
+            Lily hasn’t always had it easy, but that’s never stopped her from
+            working hard for the life she wants. She’s come a long way from
+            the small town where she grew up—she graduated from college, moved
+            to Boston, and started her own business. And when she feels a
+            spark with a gorgeous neurosurgeon named Ryle Kincaid, everything
+            in Lily’s life seems too good to be true.
+          </p>
+          <p>
+            Ryle is assertive, stubborn, maybe even a little arrogant. He’s
+            also sensitive, brilliant, and has a total soft spot for Lily. And
+            the way he looks in scrubs certainly doesn’t hurt. Lily can’t get
+            him out of her head. But Ryle’s complete aversion to relationships
+            is disturbing. Even as Lily finds herself becoming the exception
+            to his “no dating” rule, she can’t help but wonder what made him
+            that way in the first place.
+          </p>
+          <p>
+            As questions about her new relationship overwhelm her, so do
+            thoughts of Atlas Corrigan—her first love and a link to the past
+            she left behind. He was her kindred spirit, her protector. When
+            Atlas suddenly reappears, everything Lily has built with Ryle is
+            threatened.
+          </p>
+        </div>
+        <div>
+          <img src="https://storage.googleapis.com/du-prd/books/images/9781501161933.jpg" />
+          <h3 id="evelyn">The Seven Husbands Of Evelyn Hugo</h3>
+          <h4>by Taylor Jenkins Reid</h4>
+          <p>
+            Aging and reclusive Hollywood movie icon Evelyn Hugo is finally
+            ready to tell the truth about her glamorous and scandalous life.
+            But when she chooses unknown magazine reporter Monique Grant for
+            the job, no one is more astounded than Monique herself. Why her?
+            Why now?
+          </p>
+          <p>
+            Monique is not exactly on top of the world. Her husband has left
+            her, and her professional life is going nowhere. Regardless of why
+            Evelyn has selected her to write her biography, Monique is
+            determined to use this opportunity to jumpstart her career.
+          </p>
+          <p>
+            Summoned to Evelyn’s luxurious apartment, Monique listens in
+            fascination as the actress tells her story. From making her way to
+            Los Angeles in the 1950s to her decision to leave show business in
+            the ‘80s, and, of course, the seven husbands along the way, Evelyn
+            unspools a tale of ruthless ambition, unexpected friendship, and a
+            great forbidden love. Monique begins to feel a very real
+            connection to the legendary star, but as Evelyn’s story near its
+            conclusion, it becomes clear that her life intersects with
+            Monique’s own in tragic and irreversible ways.
+          </p>
+        </div>
+        <div>
+          <img src="https://storage.googleapis.com/du-prd/books/images/9781791392796.jpg" />
+          <h3 id="verity">Verity</h3>
+          <h4>by Colleen Hoover</h4>
+          <p>
+            Lowen Ashleigh is a struggling writer on the brink of financial
+            ruin when she accepts the job offer of a lifetime. Jeremy
+            Crawford, husband of bestselling author Verity Crawford, has hired
+            Lowen to complete the remaining books in a successful series his
+            injured wife is unable to finish.
+          </p>
+          <p>
+            Lowen arrives at the Crawford home, ready to sort through years of
+            Verity’s notes and outlines, hoping to find enough material to get
+            her started. What Lowen doesn’t expect to uncover in the chaotic
+            office is an unfinished autobiography Verity never intended for
+            anyone to read. Page after page of bone-chilling admissions,
+            including Verity's recollection of the night her family was
+            forever altered.
+          </p>
+          <p>
+            Lowen decides to keep the manuscript hidden from Jeremy, knowing
+            its contents could devastate the already grieving father. But as
+            Lowen’s feelings for Jeremy begin to intensify, she recognizes all
+            the ways she could benefit if he were to read his wife’s words.
+            After all, no matter how devoted Jeremy is to his injured wife, a
+            truth this horrifying would make it impossible for him to continue
+            loving her.
+          </p>
+        </div>
+        <div>
+          <img src="https://storage.googleapis.com/du-prd/books/images/9780062060624.jpg" />
+          <h3 id="achilles">The Song Of Achilles</h3>
+          <h4>by Madeline Miller</h4>
+          <p>
+            A tale of gods, kings, immortal fame, and the human heart, The
+            Song of Achilles is a dazzling literary feat that brilliantly
+            reimagines Homer’s enduring masterwork, The Iliad. An
+            action-packed adventure, an epic love story, a marvelously
+            conceived and executed page-turner, Miller’s monumental debut
+            novel has already earned resounding acclaim from some of
+            contemporary fiction’s brightest lights—and fans of Mary Renault,
+            Bernard Cornwell, Steven Pressfield, and Colleen McCullough’s
+            Masters of Rome series will delight in this unforgettable journey
+            back to ancient Greece in the Age of Heroes.
+          </p>
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="footer-content">
-        <div class="footer-nav">
-          <div class="footer-col">
-            <p>About us</p>
-            <ul>
-              <li>Our company</li>
-              <li>Mission</li>
-              <li>Careers</li>
-              <li>Terms</li>
-              <li>Privacy</li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <p>Contact us</p>
-            <ul>
-              <li>Our company</li>
-              <li>Mission</li>
-              <li>Careers</li>
-              <li>Terms</li>
-              <li>Privacy</li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <p>Support us</p>
-            <ul>
-              <li>Our company</li>
-              <li>Mission</li>
-              <li>Careers</li>
-              <li>Terms</li>
-              <li>Privacy</li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <p>Social media</p>
-            <a href="https://www.facebook.com">
-              <img
-                src="https://s.gr-assets.com/assets/site_footer/footer_facebook-ea4ab848f8e86c5f5c98311bc9495a1b.svg"
-              />
-            </a>
-            <a href="https://www.twitter.com">
-              <img
-                src="https://s.gr-assets.com/assets/site_footer/footer_twitter-126b3ee80481a763f7fccb06ca03053c.svg"
-              />
-            </a>
-            <a href="https://www.instagram.com">
-              <img
-                src="https://s.gr-assets.com/assets/site_footer/footer_instagram-d59e3887020f12bcdb12e6c539579d85.svg"
-              />
-            </a>
-            <a href="https://github.com/zxclinical/final-project">
-              <img src="images/github-mark.svg" />
-            </a>
-          </div>
+  </div>
+  <div class="footer">
+    <div class="footer-content">
+      <div class="footer-nav">
+        <div class="footer-col">
+          <p>About us</p>
+          <ul>
+            <li>Our company</li>
+            <li>Mission</li>
+            <li>Careers</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p>Contact us</p>
+          <ul>
+            <li>Our company</li>
+            <li>Mission</li>
+            <li>Careers</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p>Support us</p>
+          <ul>
+            <li>Our company</li>
+            <li>Mission</li>
+            <li>Careers</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p>Social media</p>
+          <a href="https://www.facebook.com">
+            <img
+              src="https://s.gr-assets.com/assets/site_footer/footer_facebook-ea4ab848f8e86c5f5c98311bc9495a1b.svg" />
+          </a>
+          <a href="https://www.twitter.com">
+            <img src="https://s.gr-assets.com/assets/site_footer/footer_twitter-126b3ee80481a763f7fccb06ca03053c.svg" />
+          </a>
+          <a href="https://www.instagram.com">
+            <img
+              src="https://s.gr-assets.com/assets/site_footer/footer_instagram-d59e3887020f12bcdb12e6c539579d85.svg" />
+          </a>
+          <a href="https://github.com/zxclinical/final-project">
+            <img src="images/github-mark.svg" />
+          </a>
         </div>
       </div>
     </div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
-      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script src="main/app.js"></script>
-  </body>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+    integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="main/app.js"></script>
+</body>
+
 </html>
