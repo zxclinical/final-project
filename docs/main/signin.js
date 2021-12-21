@@ -18,7 +18,7 @@ function setSuccessFor(input) {
 const signIn = () => {
     let email = document.getElementById('email').value, pwd = document.getElementById('pwd').value;
     let formData = JSON.parse(localStorage.getItem('formData')) || [];
-    let exists = formData.length && JSON.parse(localStorage.getItem('formData')).some(data => data.email.toLowerCase() == email && data.pwd.toLowerCase() == pwd);
+    let exists = formData.length && JSON.parse(localStorage.getItem('formData')).some(data => data.email == email && data.pwd == pwd);
     if (!exists) {
         setErrorFor(document.getElementById('email'), '');
         setErrorFor(document.getElementById('pwd'), 'Email or password are incorrect');

@@ -52,8 +52,7 @@ function checkInput() {
         setErrorFor(pwd, 'Password length should be at least 8 charachter');
     } else if (!checkPwd(pwdValue)){
         setErrorFor(pwd, 'Password should contain at least 1 digit, 1 lower case, 1 upper case letter');
-    }
-     else {
+    } else {
         setSuccessFor(pwd);
     }
 
