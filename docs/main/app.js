@@ -1,4 +1,4 @@
-
+new WOW().init();
 const guestElements = document.querySelectorAll('.guest');
 const userElements = document.querySelectorAll('.user');
 const adminElements = document.querySelectorAll('.admin');
